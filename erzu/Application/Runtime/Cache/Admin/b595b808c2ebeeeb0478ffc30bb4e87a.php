@@ -5,11 +5,11 @@
 <title>面试宝典</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- basic styles -->
-<link href="/interview/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/interview/Public/css/font-awesome.min.css" />
+<link href="/text/erzu/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/text/erzu/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/interview/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/text/erzu/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -20,25 +20,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/interview/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/interview/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/interview/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/text/erzu/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/text/erzu/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/text/erzu/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/interview/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/text/erzu/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/interview/Public/js/ace-extra.min.js"></script>
+<script src="/text/erzu/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/interview/Public/js/html5shiv.js"></script>
-<script src="/interview/Public/js/respond.min.js"></script>
+<script src="/text/erzu/Public/js/html5shiv.js"></script>
+<script src="/text/erzu/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 
@@ -64,7 +64,7 @@
 
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-						<img class="nav-user-photo" src="/interview/Public/avatars/user.jpg" alt="Jason's Photo" />
+						<img class="nav-user-photo" src="/text/erzu/Public/avatars/user.jpg" alt="Jason's Photo" />
 						<span class="user-info">
 							<small>欢迎光临,</small>
 							ADMIN
@@ -91,7 +91,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="#">
+							<a href="/text/erzu/index.php/Admin/Login/logout">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -354,7 +354,7 @@
 
 <!--[if !IE]> -->
 
-<script src="/interview/Public/js/jquery.min.js"></script>
+<script src="/text/erzu/Public/js/jquery.min.js"></script>
 
 <!-- <![endif]-->
 
@@ -365,42 +365,42 @@
 <!--[if !IE]> -->
 
 <script type="text/javascript">
-	window.jQuery || document.write("<script src='/interview/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+	window.jQuery || document.write("<script src='/text/erzu/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 </script>
 
 <!-- <![endif]-->
 
 <!--[if IE]>
 <script type="text/javascript">
-window.jQuery || document.write("<script src='/interview/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+window.jQuery || document.write("<script src='/text/erzu/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='/interview/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	if("ontouchend" in document) document.write("<script src='/text/erzu/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 </script>
-<script src="/interview/Public/js/bootstrap.min.js"></script>
-<script src="/interview/Public/js/typeahead-bs2.min.js"></script>
+<script src="/text/erzu/Public/js/bootstrap.min.js"></script>
+<script src="/text/erzu/Public/js/typeahead-bs2.min.js"></script>
 
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-  <script src="/interview/Public/js/excanvas.min.js"></script>
+  <script src="/text/erzu/Public/js/excanvas.min.js"></script>
 <![endif]-->
 
-<script src="/interview/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="/interview/Public/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/interview/Public/js/jquery.slimscroll.min.js"></script>
-<script src="/interview/Public/js/jquery.easy-pie-chart.min.js"></script>
-<script src="/interview/Public/js/jquery.sparkline.min.js"></script>
-<script src="/interview/Public/js/flot/jquery.flot.min.js"></script>
-<script src="/interview/Public/js/flot/jquery.flot.pie.min.js"></script>
-<script src="/interview/Public/js/flot/jquery.flot.resize.min.js"></script>
+<script src="/text/erzu/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/text/erzu/Public/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/text/erzu/Public/js/jquery.slimscroll.min.js"></script>
+<script src="/text/erzu/Public/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/text/erzu/Public/js/jquery.sparkline.min.js"></script>
+<script src="/text/erzu/Public/js/flot/jquery.flot.min.js"></script>
+<script src="/text/erzu/Public/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/text/erzu/Public/js/flot/jquery.flot.resize.min.js"></script>
 
 <!-- ace scripts -->
 
-<script src="/interview/Public/js/ace-elements.min.js"></script>
-<script src="/interview/Public/js/ace.min.js"></script>
+<script src="/text/erzu/Public/js/ace-elements.min.js"></script>
+<script src="/text/erzu/Public/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
 
