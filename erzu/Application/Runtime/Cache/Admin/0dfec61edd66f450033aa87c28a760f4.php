@@ -1,14 +1,14 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>项目后台管理系统</title>
-<link rel="stylesheet" href="__PUBLIC__/css/login.css" />
+<link rel="stylesheet" href="/text/erzu/Public/css/login.css" />
 </head>
 
 <body class="b">
 <div class="lg">
-<form action="__URL__/dologin" method="POST">
+<form action="/text/erzu/index.php/Admin/Login/dologin" method="POST">
     <div class="lg_top"></div>
     <div class="lg_main">
         <div class="lg_m_1">

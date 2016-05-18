@@ -11,18 +11,20 @@ class LoginController extends Controller
 	
 	//登录验证
 	public function dologin(){
-     	 $user=D('User');
-     	 if($user->validate($user->rules)->create()){
-              $this->success("登录成功",U('Index/index'),2);
-     	 }else{
-     	 	$this->error($user->getError(),U('Login/login'),2);
-     	 }
+     	 $admin=D('Admin');
+		 if($admin->login1()){
+			 $this->success('登陆成功',U('Index/index'),3);
+          
+		 }else{
+			 $this->error('用户名不存在',U('Login/login'),'3');
+		 }
+     	 
      }  
-	
+	//退出成功
 	public function logout()
 	{
-		
-		session(null);
+		unset($_SESSION['userid']);
+        unset($_SESSION['username']);
 		$this->success('退出成功',U('Login/login'));
 	}
 	
