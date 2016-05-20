@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>面试宝典</title>
+<title>企聘王</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- basic styles -->
-<link href="/xiangmu/text/erzu/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/font-awesome.min.css" />
+<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -20,25 +20,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/xiangmu/text/erzu/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/xiangmu/text/erzu/Public/js/ace-extra.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/xiangmu/text/erzu/Public/js/html5shiv.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/respond.min.js"></script>
+<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
+<script src="/xiangmu/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 
@@ -53,7 +53,7 @@
 			<a href="#" class="navbar-brand">
 				<small>
 					<i class="icon-leaf"></i>
-					面试宝典后台系统
+					企聘王后台系统
 				</small>
 			</a><!-- /.brand -->
 		</div><!-- /.navbar-header -->
@@ -64,7 +64,7 @@
 
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-						<img class="nav-user-photo" src="/xiangmu/text/erzu/Public/avatars/user.jpg" alt="Jason's Photo" />
+						<img class="nav-user-photo" src="/xiangmu/text/Public/avatars/user.jpg" alt="Jason's Photo" />
 						<span class="user-info">
 							<small>欢迎光临,</small>
 							ADMIN
@@ -91,7 +91,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="#">
+							<a href="/xiangmu/text/index.php/Admin/Login/logout">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -135,7 +135,7 @@
 				<li class="active">
 					<a href="index.html">
 						<i class="icon-dashboard"></i>
-						<span class="menu-text"> 宝典控制台 </span>
+						<span class="menu-text"> 招聘控制台 </span>
 					</a>
 				</li>
 
@@ -259,7 +259,7 @@
 			<div class="page-content">
 				<div class="page-header">
 					<h1>
-						面试宝典控制台
+						企聘王控制台
 						<small>
 							<i class="icon-double-angle-right"></i>
 							 查看
@@ -280,10 +280,10 @@
 
 							欢迎使用
 							<strong class="green">
-								面试宝典后台系统
+								企聘王后台系统
 							<small>(v1.2)</small>
 							</strong>
-							,这里为你提供更更全面的面试宝典信息.	
+							,这里为你提供更更全面的招聘信息.	
 					  </div>
 
 
@@ -354,7 +354,7 @@
 
 <!--[if !IE]> -->
 
-<script src="/xiangmu/text/erzu/Public/js/jquery.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.min.js"></script>
 
 <!-- <![endif]-->
 
@@ -365,42 +365,42 @@
 <!--[if !IE]> -->
 
 <script type="text/javascript">
-	window.jQuery || document.write("<script src='/xiangmu/text/erzu/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+	window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 </script>
 
 <!-- <![endif]-->
 
 <!--[if IE]>
 <script type="text/javascript">
-window.jQuery || document.write("<script src='/xiangmu/text/erzu/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='/xiangmu/text/erzu/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	if("ontouchend" in document) document.write("<script src='/xiangmu/text/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 </script>
-<script src="/xiangmu/text/erzu/Public/js/bootstrap.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/typeahead-bs2.min.js"></script>
+<script src="/xiangmu/text/Public/js/bootstrap.min.js"></script>
+<script src="/xiangmu/text/Public/js/typeahead-bs2.min.js"></script>
 
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-  <script src="/xiangmu/text/erzu/Public/js/excanvas.min.js"></script>
+  <script src="/xiangmu/text/Public/js/excanvas.min.js"></script>
 <![endif]-->
 
-<script src="/xiangmu/text/erzu/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/jquery.slimscroll.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/jquery.easy-pie-chart.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/jquery.sparkline.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/flot/jquery.flot.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/flot/jquery.flot.pie.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/flot/jquery.flot.resize.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.slimscroll.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.sparkline.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.resize.min.js"></script>
 
 <!-- ace scripts -->
 
-<script src="/xiangmu/text/erzu/Public/js/ace-elements.min.js"></script>
-<script src="/xiangmu/text/erzu/Public/js/ace.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace-elements.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
 
