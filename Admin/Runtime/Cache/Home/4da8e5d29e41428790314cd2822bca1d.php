@@ -368,66 +368,35 @@
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
 
-<form class="form-inline definewidth m20" action="/php10/text/admin.php/Home/Resume/resume" method="get">
-    简历名称：
-    <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="<?php echo ($keyword); ?>">&nbsp;&nbsp;
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp; <button type="button" class="btn btn-success" id="addnew">新增机构</button>
-</form>
+ 
 
- 	<?php if($arr){ ?>
- 	<form action="/php10/text/admin.php/Home/Resume/delete" method="post">
-	<table class="table table-bordered table-hover definewidth m10" >
-	    <thead>
-
-	    <tr>
-	        <th>多选</th>
-	        <th>姓名</th>
-	        <th>性别</th>
-	        <th>年龄</th> 
-	        <th>毕业学校</th> 
-	        <th>做过项目</th> 
-	        <th>家庭住址</th> 
-	        <th>自我评价</th> 
-	        <th>编辑</th> 
-	    </tr>
-	    </thead>
+ 	
+	<h1>简历详情</h1>
 	<?php foreach ($arr as $key => $value): ?>
 		
-	
-	    <tr>
-	    <td><input type="checkbox" name="r_id[]" id="r_id[]" value="<?php echo $value['r_id']?>"></td>
-	        <td><?php echo $value['r_name']?></td> 
-	        <td><?php if($value['r_sex']=='0'){ echo '男';}elseif($value['r_sex']=='1'){echo '女';}?></td>
-	        <td><?php echo $value['r_age']?></td>
-	        <td><?php echo $value['r_school']?></td>
-	        <td><?php echo $value['r_project']?></td>
-	        <td><?php echo $value['r_address']?></td>
-	        <td><?php echo $value['r_evaluate']?></td>
-	        <td>
-	        	<a href="/php10/text/admin.php/Home/Resume/details/r_id/<?php echo $value['r_id']?>">详情</a> 
-	        </td> 
-	    </tr>
+	<table>
+	    <ul>
+	        <li>姓名：<?php echo $value['r_name']?></li> 
+	        <li>性别：<?php if($value['r_sex']=='0'){ echo '男';}elseif($value['r_sex']=='1'){echo '女';}?></li>
+	        <li>年龄：<?php echo $value['r_age']?></li>
+	        <li>毕业学校：<?php echo $value['r_school']?></li>
+	        <li>出生:<?php echo $value['r_born']?></li>
+	        <li>求职意向:<?php echo $value['p_name']?></li>
+	        <li>期望薪资:<?php echo $value['m_money']?></li>
+	        <li>学历:<?php echo $value['e_name']?></li>
+	        <li>工作经验:<?php echo $value['e_year']?></li>
+	        <li>手机号:<?php echo $value['r_tel']?></li>
+	        <li>邮箱:<?php echo $value['r_email']?></li>
+	        <li>精通技能:<?php echo $value['r_skill']?></li>
+	        <li>做过项目:<?php echo $value['r_project']?></li>
+	        <li>家庭住址:<?php echo $value['r_address']?></li>
+	        <li>自我评价:<?php echo $value['r_evaluate']?></li> 
+	        <li>发布简历时间:<?php echo $value['r_addtime']?></li> 
+	    </ul>
+	    </table>
 <?php endforeach ?>
-    </table>
-    <input type="submit" name="submit" id="submit" value="批量删除" onclick="if(confirm('确定删除？')){}else{return false;};">
-    </form>
-
-    <div><?php echo ($page); ?>共<?php echo ($count); ?>条数据</div>
-    <?php }else{ echo "<table class=\"table table-bordered table-hover definewidth m10\" >
-	    <thead>
-
-	    <tr>
-	        <th>姓名</th>
-	        <th>性别</th>
-	        <th>年龄</th> 
-	        <th>毕业学校</th> 
-	        <th>做过项目</th> 
-	        <th>家庭住址</th> 
-	        <th>自我评价</th> 
-	        <th>编辑</th> 
-	    </tr>
-	    </thead>
-</table>"; echo '<center>'."<span style='color:red;'>你搜索的是".$keyword."暂无数据</span>".'</center>'; }?><br />
+   
+    
 
 
 
@@ -738,19 +707,6 @@ window.jQuery || document.write("<script src='/php10/text/Public/js/jquery-1.10.
 		});
 		
 	
-	})
-</script>
-
-<script>
-	$('#submit').click(function(){
-		text = $("input:checkbox[name='r_id[]']:checked").map(function(index,elem) {
-			return $(elem).val();
-		}).get().join(',');
-		if (text=='') {
-			alert('请选择删除内容')
-			return false
-		}
-		
 	})
 </script>
 
