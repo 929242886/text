@@ -66,6 +66,18 @@ class AdminuserModel extends Model{
         $str=preg_replace("/\s/", "", $str);//去除空格、换行符、制表符
         return $str;
     }
+
+    public function show() {
+
+      $name=session('admin_name');
+      return $this->
+        join("qipin_ur on qipin_ur.u_id=qipin_adminuser.a_id")->
+        join("qipin_role on qipin_ur.r_id=qipin_role.r_id")->
+        join("qipin_rp on qipin_rp.r_id=qipin_role.r_id")->
+        join("qipin_power on qipin_power.p_id=qipin_rp.p_id")->
+        where("a_user='$name'")->select();
+
+    }
 	
 }
 ?>

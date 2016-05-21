@@ -91,7 +91,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/xiangmu/text/admin.php/Home/Login/logout">
+							<a href="/xiangmu/text/admin.php/Home/Index/logout">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -149,7 +149,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="elements.html">
+							<a href="/xiangmu/text/admin.php/Home/Teacher/index">
 								<i class="icon-double-angle-right"></i>
 								导航管理
 							</a>

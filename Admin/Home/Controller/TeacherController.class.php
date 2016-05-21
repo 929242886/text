@@ -1,11 +1,11 @@
 <?php
 namespace Home\Controller;
 use Think\Controller;
-class AdminController extends PublicController
+class TeacherController extends PublicController
 {
 	public function index() {
 
-		echo "234";
+		echo "321";
 
 	}
 }
