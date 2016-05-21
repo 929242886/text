@@ -2,44 +2,27 @@
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>企聘王</title>
+<title>学生简历</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- basic styles -->
-<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css" />
+<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
 
-<!--[if IE 7]>
-  <link rel="stylesheet" href="__PUBLIC__/css/font-awesome-ie7.min.css" />
-<![endif]-->
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
 
-<!-- page specific plugin styles -->
 
-<!-- fonts -->
-
-<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300" />
-
-<!-- ace styles -->
-
-<link rel="stylesheet" href="__PUBLIC__/css/ace.min.css" />
-<link rel="stylesheet" href="__PUBLIC__/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="__PUBLIC__/css/ace-skins.min.css" />
-
-<!--[if lte IE 8]>
-  <link rel="stylesheet" href="__PUBLIC__/css/ace-ie.min.css" />
-<![endif]-->
-
-<!-- inline styles related to this page -->
-
-<!-- ace settings handler -->
-
-<script src="__PUBLIC__/js/ace-extra.min.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-<!--[if lt IE 9]>
-<script src="__PUBLIC__/js/html5shiv.js"></script>
-<script src="__PUBLIC__/js/respond.min.js"></script>
-<![endif]-->
+    </style>
 </head>
 
 <body>
@@ -58,7 +41,6 @@
 			</a><!-- /.brand -->
 		</div><!-- /.navbar-header -->
 
-		
 		<include file="common:top"/> 
 	</div><!-- /.container -->
 </div>
@@ -93,8 +75,6 @@
 
 			<include file="common:left"/> 
 
-			
-
 			<script type="text/javascript">
 				try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
 			</script>
@@ -111,14 +91,14 @@
 						<i class="icon-home home-icon"></i>
 						<a href="#">首页</a>
 					</li>
-					<li class="active">企聘王控制台</li>
+					<li class="active">简历控制台</li>
 				</ul><!-- .breadcrumb -->
 			</div>
 
 			<div class="page-content">
 				<div class="page-header">
 					<h1>
-						企聘王控制台
+						简历控制台
 						<small>
 							<i class="icon-double-angle-right"></i>
 							 查看
@@ -129,78 +109,41 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
-	
-	<form class="form-inline definewidth m20" action="__CONTROLLER__/index" method="get">
-    企业名称：
-    <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="{$keyword}">&nbsp;&nbsp;
-    <button type="submit" class="btn btn-primary">查询</button>
-</form>
 
- 	<?php if($arr){ ?>
- 	<form action="__CONTROLLER__/delete" method="post">
-	<table class="table table-bordered table-hover definewidth m10" >
-	    <thead>
+ 
 
-	    <tr>
-	        <th>多选</th>
-	        <th>公司名称</th>
-	        <th>公司电话</th>
-	        <th>法人代表</th> 
-	        <th>营业执照</th> 
-	        <th>详细地址</th> 
-	        <th>规模</th> 
-	        <th>公司邮箱</th> 
-	        <th>添加时间</th>
-	        <th>状态</th>
-	    </tr>
-	    </thead>
+ 	
+	<h1>简历详情</h1>
 	<?php foreach ($arr as $key => $value): ?>
 		
-	
-	    <tr>
-	    <td><input type="checkbox" name="e_id[]" id="e_id[]" value="<?php echo $value['e_id']?>"></td>
-	      <td><?php echo $value['e_name']?></td>
-	      <td><?php echo $value['e_phone']?></td>
-	      <td><?php echo $value['e_legal']?></td>
-	      <td>
-                <img src="__PUBLIC__/<?php echo $value['e_photo']?>" alt="">
-	      </td>
-	      <td><?php echo $value['e_area']?></td>
-	      <td><?php echo $value['e_size']?></td>
-	      <td><?php echo $value['e_email']?></td>
-	      <td><?php echo $value['e_addtime']?></td>
-	      <td>
-	      	<?php if ($value['e_status']==0) { ?>
-                 <a href="__CONTROLLER__/status/e_id/<?php echo $value['e_id']?>">审核</a>
-	      	<?php }else{ ?>
-			     <b>已审核</b>
-	      		<?php } ?>
-	      </td>
-	    </tr>
+	<table>
+	    <ul>
+	        <li>姓名：<?php echo $value['r_name']?></li> 
+	        <li>性别：<?php if($value['r_sex']=='0'){?><?php echo '男';}elseif($value['r_sex']=='1'){echo '女';}?></li>
+	        <li>年龄：<?php echo $value['r_age']?></li>
+	        <li>毕业学校：<?php echo $value['r_school']?></li>
+	        <li>出生:<?php echo $value['r_born']?></li>
+	        <li>求职意向:<?php echo $value['p_name']?></li>
+	        <li>期望薪资:<?php echo $value['m_money']?></li>
+	        <li>学历:<?php echo $value['e_name']?></li>
+	        <li>工作经验:<?php echo $value['e_year']?></li>
+	        <li>手机号:<?php echo $value['r_tel']?></li>
+	        <li>邮箱:<?php echo $value['r_email']?></li>
+	        <li>精通技能:<?php echo $value['r_skill']?></li>
+	        <li>做过项目:<?php echo $value['r_project']?></li>
+	        <li>家庭住址:<?php echo $value['r_address']?></li>
+	        <li>自我评价:<?php echo $value['r_evaluate']?></li> 
+	        <li>发布简历时间:<?php echo $value['r_addtime']?></li> 
+	    </ul>
+	    </table>
 <?php endforeach ?>
-    </table>
-    <input type="submit" name="submit" id="submit" value="批量删除" onclick="if(confirm('确定删除？')){}else{return false;};">
-    </form>
+   
+    
 
-    <div>{$page}共{$count}条数据</div>
-    <?php }else{
-	echo "<table class=\"table table-bordered table-hover definewidth m10\" >
-	    <thead>
 
-	    <tr>
-	        <th>姓名</th>
-	        <th>性别</th>
-	        <th>年龄</th> 
-	        <th>毕业学校</th> 
-	        <th>做过项目</th> 
-	        <th>家庭住址</th> 
-	        <th>自我评价</th> 
-	        <th>编辑</th> 
-	    </tr>
-	    </thead>
-</table>";
-	echo '<center>'."<span style='color:red;'>你搜索的是".$keyword."暂无数据</span>".'</center>';
-	}?><br />
+
+
+
 						<!-- PAGE CONTENT ENDS -->
 					</div><!-- /.col -->
 				</div><!-- /.row -->

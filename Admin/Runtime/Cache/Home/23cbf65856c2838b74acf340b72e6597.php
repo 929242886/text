@@ -3,12 +3,12 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>项目后台管理系统</title>
-<link rel="stylesheet" href="/xiangmu/text/Public/css/login.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/login.css" />
 </head>
 
 <body class="b">
 <div class="lg">
-<form action="/xiangmu/text/admin.php/Home/Index/dologin" method="POST">
+<form action="/php10/text/admin.php/Home/Index/dologin" method="POST">
     <div class="lg_top"></div>
     <div class="lg_main">
         <div class="lg_m_1">

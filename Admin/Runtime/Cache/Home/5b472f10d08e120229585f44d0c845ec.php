@@ -5,11 +5,11 @@
 <title>企聘王</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <!-- basic styles -->
-<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
+<link href="/php10/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/php10/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -20,25 +20,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
+<script src="/php10/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
-<script src="/xiangmu/text/Public/js/respond.min.js"></script>
+<script src="/php10/text/Public/js/html5shiv.js"></script>
+<script src="/php10/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 
@@ -65,11 +65,11 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
 	<!-- basic styles -->
-<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
+<link href="/php10/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/php10/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -80,25 +80,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
+<script src="/php10/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
-<script src="/xiangmu/text/Public/js/respond.min.js"></script>
+<script src="/php10/text/Public/js/html5shiv.js"></script>
+<script src="/php10/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -108,7 +108,7 @@
 
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-						<img class="nav-user-photo" src="/xiangmu/text/Public/avatars/user.jpg" alt="Jason's Photo" />
+						<img class="nav-user-photo" src="/php10/text/Public/avatars/user.jpg" alt="Jason's Photo" />
 						<span class="user-info">
 							<small>欢迎光临,</small>
 							ADMIN
@@ -135,7 +135,7 @@
 						<li class="divider"></li>
 
 						<li>
-							<a href="/xiangmu/text/admin.php/Home/Login/logout">
+							<a href="/php10/text/admin.php/Home/Login/logout">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -183,13 +183,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title></title>
-	<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/php10/text/Public/css/bootstrap.min.css" rel="stylesheet" />
  <!-- basic styles -->
-<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
+<link href="/php10/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/php10/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -200,25 +200,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/php10/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/php10/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
+<script src="/php10/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
-<script src="/xiangmu/text/Public/js/respond.min.js"></script>
+<script src="/php10/text/Public/js/html5shiv.js"></script>
+<script src="/php10/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -240,7 +240,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/xiangmu/text/admin.php/Home/Teacher/index">
+							<a href="/php10/text/admin.php/Home/Teacher/index">
 								<i class="icon-double-angle-right"></i>
 								导航管理
 							</a>
@@ -273,7 +273,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/xiangmu/text/admin.php/Home/Enterprise/index">
+							<a href="/php10/text/admin.php/Home/Enterprise/index">
 								<i class="icon-double-angle-right"></i>
 								企业显示
 							</a>
@@ -388,44 +388,52 @@
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
 	
-	<form class="form-inline definewidth m20" action="/xiangmu/text/admin.php/Home/Enterprise/resume" method="get">
+	<form class="form-inline definewidth m20" action="/php10/text/admin.php/Home/Enterprise/index" method="get">
     企业名称：
     <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="<?php echo ($keyword); ?>">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>
 </form>
 
  	<?php if($arr){ ?>
- 	<form action="/xiangmu/text/admin.php/Home/Enterprise/delete" method="post">
+ 	<form action="/php10/text/admin.php/Home/Enterprise/delete" method="post">
 	<table class="table table-bordered table-hover definewidth m10" >
 	    <thead>
 
 	    <tr>
 	        <th>多选</th>
-	        <th>姓名</th>
-	        <th>性别</th>
-	        <th>年龄</th> 
-	        <th>毕业学校</th> 
-	        <th>做过项目</th> 
-	        <th>家庭住址</th> 
-	        <th>自我评价</th> 
-	        <th>编辑</th> 
+	        <th>公司名称</th>
+	        <th>公司电话</th>
+	        <th>法人代表</th> 
+	        <th>营业执照</th> 
+	        <th>详细地址</th> 
+	        <th>规模</th> 
+	        <th>公司邮箱</th> 
+	        <th>添加时间</th>
+	        <th>状态</th>
 	    </tr>
 	    </thead>
 	<?php foreach ($arr as $key => $value): ?>
 		
 	
 	    <tr>
-	    <td><input type="checkbox" name="r_id[]" id="r_id[]" value="<?php echo $value['r_id']?>"></td>
-	        <td><?php echo $value['r_name']?></td> 
-	        <td><?php if($value['r_sex']=='0'){ echo '男';}elseif($value['r_sex']=='1'){echo '女';}?></td>
-	        <td><?php echo $value['r_age']?></td>
-	        <td><?php echo $value['r_school']?></td>
-	        <td><?php echo $value['r_project']?></td>
-	        <td><?php echo $value['r_address']?></td>
-	        <td><?php echo $value['r_evaluate']?></td>
-	        <td>
-	        	<a href="/xiangmu/text/admin.php/Home/Enterprise/details/r_id/<?php echo $value['r_id']?>">详情</a> 
-	        </td> 
+	    <td><input type="checkbox" name="e_id[]" id="e_id[]" value="<?php echo $value['e_id']?>"></td>
+	      <td><?php echo $value['e_name']?></td>
+	      <td><?php echo $value['e_phone']?></td>
+	      <td><?php echo $value['e_legal']?></td>
+	      <td>
+                <img src="/php10/text/Public/<?php echo $value['e_photo']?>" alt="">
+	      </td>
+	      <td><?php echo $value['e_area']?></td>
+	      <td><?php echo $value['e_size']?></td>
+	      <td><?php echo $value['e_email']?></td>
+	      <td><?php echo $value['e_addtime']?></td>
+	      <td>
+	      	<?php if ($value['e_status']==0) { ?>
+                 <a href="/php10/text/admin.php/Home/Enterprise/status/e_id/<?php echo $value['e_id']?>">审核</a>
+	      	<?php }else{ ?>
+			     <b>已审核</b>
+	      		<?php } ?>
+	      </td>
 	    </tr>
 <?php endforeach ?>
     </table>
@@ -512,7 +520,7 @@
 
 <!--[if !IE]> -->
 
-<script src="/xiangmu/text/Public/js/jquery.min.js"></script>
+<script src="/php10/text/Public/js/jquery.min.js"></script>
 
 <!-- <![endif]-->
 
@@ -523,42 +531,42 @@
 <!--[if !IE]> -->
 
 <script type="text/javascript">
-	window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+	window.jQuery || document.write("<script src='/php10/text/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 </script>
 
 <!-- <![endif]-->
 
 <!--[if IE]>
 <script type="text/javascript">
-window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+window.jQuery || document.write("<script src='/php10/text/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='/xiangmu/text/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	if("ontouchend" in document) document.write("<script src='/php10/text/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 </script>
-<script src="/xiangmu/text/Public/js/bootstrap.min.js"></script>
-<script src="/xiangmu/text/Public/js/typeahead-bs2.min.js"></script>
+<script src="/php10/text/Public/js/bootstrap.min.js"></script>
+<script src="/php10/text/Public/js/typeahead-bs2.min.js"></script>
 
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-  <script src="/xiangmu/text/Public/js/excanvas.min.js"></script>
+  <script src="/php10/text/Public/js/excanvas.min.js"></script>
 <![endif]-->
 
-<script src="/xiangmu/text/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="/xiangmu/text/Public/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/xiangmu/text/Public/js/jquery.slimscroll.min.js"></script>
-<script src="/xiangmu/text/Public/js/jquery.easy-pie-chart.min.js"></script>
-<script src="/xiangmu/text/Public/js/jquery.sparkline.min.js"></script>
-<script src="/xiangmu/text/Public/js/flot/jquery.flot.min.js"></script>
-<script src="/xiangmu/text/Public/js/flot/jquery.flot.pie.min.js"></script>
-<script src="/xiangmu/text/Public/js/flot/jquery.flot.resize.min.js"></script>
+<script src="/php10/text/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/php10/text/Public/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/php10/text/Public/js/jquery.slimscroll.min.js"></script>
+<script src="/php10/text/Public/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/php10/text/Public/js/jquery.sparkline.min.js"></script>
+<script src="/php10/text/Public/js/flot/jquery.flot.min.js"></script>
+<script src="/php10/text/Public/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/php10/text/Public/js/flot/jquery.flot.resize.min.js"></script>
 
 <!-- ace scripts -->
 
-<script src="/xiangmu/text/Public/js/ace-elements.min.js"></script>
-<script src="/xiangmu/text/Public/js/ace.min.js"></script>
+<script src="/php10/text/Public/js/ace-elements.min.js"></script>
+<script src="/php10/text/Public/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
 
