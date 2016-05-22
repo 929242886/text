@@ -18,7 +18,7 @@
       <h1>企业注册</h1>
       <form method="post" action="registerok">
         <p><input type="text" name="e_phone" id="e_phone" value="" placeholder="手机号" ><font color="red"><span id='s1'></span></font></p>
-        <p>验证码：<input type="text" name="verify" id=""><input id="zphone" type="button" value=" 获取手机验证码 " onClick="get_mobile_code()"></p>
+        <p>验证码：<input type="text" name="verify" id=""><input type="button" class="verify_num" value="获取验证码" id="verity_num" style="display: block"/></p>
         <p><input type="password" name="e_pwd" id="e_pwd" value="" placeholder="密码"><font color='red'><span id='s2'></span></font></p>
         <p class="remember_me">
           <label>
@@ -41,7 +41,7 @@ var username=$('#e_phone').val();
 if(username==''){
 $('#s1').html('手机号不能为空');
 }else{
-var a=/^1[3|4|5|8][0-9]\d{4,8}$/; 
+var a=/^1[3|4|5|8]\d{9}$/; 
 if(!a.test(username)){
     $('#s1').html('手机号格式不正确');
   }else{
@@ -77,51 +77,69 @@ $(document).ready(function(){
 });
 </script>
 <script language="javascript">
- function get_mobile_code(){
-        function get_mobile_code(){
-        $.post('sms.php', {mobile:jQuery.trim($('#e_phone').val()),send_code:<?php echo $_SESSION['send_code'];?>}, function(msg) {
-            alert(jQuery.trim(unescape(msg)));
-      if(msg=='提交成功'){
-        RemainTime();
-      }
-        });
-  };
-  var iTime = 59;
-  var Account;
-  function RemainTime(){
-    document.getElementById('zphone').disabled = true;
-    var iSecond,sSecond="",sTime="";
-    if (iTime >= 0){
-      iSecond = parseInt(iTime%60);
-      iMinute = parseInt(iTime/60)
-      if (iSecond >= 0){
-        if(iMinute>0){
-          sSecond = iMinute + "分" + iSecond + "秒";
+  $(document).on('click','#stu',function(){
+        var $that = $(this);
+        $("#nostu").css("background",'none');
+        $that.css("background",'#dedede');
+        $('.admin_input').css('display','none');
+        $('.user_input').css('display','block');
+    });
+    $(document).on('click','#nostu',function(){
+        var $that = $(this);
+        $("#stu").css("background",'none');
+        $that.css("background",'#dedede');
+        $('.user_input').css('display','none');
+        $('.admin_input').css('display','block');
+    });
+    $(document).on('blur','#phone',function(){
+        var phone = $(this).val();
+        var tel = /^[1][3|5|8]\d{9}$/;
+        if(tel.test(phone)){
+            $.getJSON("__URL__/useronly",{phone:phone},function(obj){
+                if(obj == 1){
+                    flag = 'new';
+                    $('#ver').css('display','block');
+                    $('#verity_num').css('display','block');
+                }else{
+                    flag = 'old';
+                    $('#ver').css('display','none');
+                    $('#verity_num').css('display','none');
+                }
+            });
         }else{
-          sSecond = iSecond + "秒";
+            $('#ver').css('display','none');
+            $('#verity_num').css('display','none');
         }
-      }
-      sTime=sSecond;
-      if(iTime==0){
-        clearTimeout(Account);
-        sTime='获取手机验证码';
-        iTime = 59;
-        document.getElementById('zphone').disabled = false;
-      }else{
-        Account = setTimeout("RemainTime()",1000);
-        iTime=iTime-1;
-      }
-    }else{
-      sTime='没有倒计时';
-    }
-    document.getElementById('zphone').value = sTime;
-  } 
+    });
+    $(document).on('click','#verity_num',function(){
+        var phone = $('#e_phone').val();
+        $.getJSON("__URL__/verify",{phone:phone},function(obj){
+            if(obj == 100){
+                alert('验证码发送成功，请及时查收，1分钟后失效！');
+            }else if(obj == 108){
+                alert('手机号码发送太频繁，请换号或隔天再发');
+            }else{
+                alert('验证码发送失败，请及时联系客服！');
+            }
+        });
+    });
+    $(document).on('click','#sub',function(){
+        var phone = $('#phone').val();
+        var tel = /^[1][3|5|8]\d{9}$/;
+        var veri = /^\d{6}$/;
+        var verify = $('#verify').val();
+        if(tel.test(phone)){
+            if(flag == 'new'){
+                if(!veri.test(verify)){
+                    alert("请正确填写验证码");
+                    return false;
+                }
+            }
+        }
+    });
 </script>
-    <div class="login-help">
-      <p>忘记密码? <a href="index.html">点击修改</a>.</p>
-    </div>
+    
   </section>
-<div style="text-align:center;">
-</div>
+
 </body>
 </html>
