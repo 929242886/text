@@ -12,9 +12,7 @@
   	public function index() {
         $db = M('enterprise');
   			$where = 'e_id > 0';
-        // print_r($db);die;
-	        $keyword = $_GET['keyword'];
-	        if(!empty($keyword))
+  			$keyword = $_GET['keyword'];
 	        $where = " e_name like '%$keyword%'"; 
 	        $count      = $db->where($where)->count();// 查询满足要求的总记录数
 	        $Page       = new \Think\Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
