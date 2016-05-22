@@ -2007,3 +2007,98 @@ INFO: [ app_init ] --START--
 INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
 INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-05-22T17:33:31+08:00 ] 114.249.219.231 /text/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000390s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000431s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `qipin_resume` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `qipin_position`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_experience`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `qipin_money`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 1 ) LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 2 ) LIMIT 3   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 3 ) LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sou1 /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sou /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pid /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Application/Home/View/index/xia.html): failed to open stream: No such file or directory /phpstudy/www/text/ThinkPHP/Library/Think/Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000051s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000094s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005664s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000179s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000395s ]
+
+[ 2016-05-22T17:33:35+08:00 ] 114.249.219.231 /text/index.php/Home/Resume/index?r_id=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+SQL: SHOW COLUMNS FROM `qipin_resume` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_user on qipin_user.u_id=qipin_resume.u_id INNER JOIN qipin_position on qipin_position.p_id=qipin_resume.p_id INNER JOIN qipin_money on qipin_money.m_id=qipin_resume.m_id INNER JOIN qipin_education on qipin_education.ed_id=qipin_resume.R_education INNER JOIN qipin_experience on qipin_experience.ex_id=qipin_resume.eid  WHERE ( qipin_resume.r_id=2 )  [ RunTime:0.0003s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /phpstudy/www/text/Application/Home/Controller/ResumeController.class.php 第 13 行.
+NOTIC: [8] Undefined index: tel /phpstudy/www/text/Application/Home/Controller/ResumeController.class.php 第 17 行.
+SQL: SHOW COLUMNS FROM `qipin_enterprise` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `qipin_enterprise` WHERE ( e_id=6 )  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000083s ]
+NOTIC: [8] Use of undefined constant r_sex - assumed 'r_sex' /phpstudy/www/text/Application/Runtime/Cache/Home/fda40d6311b127439d0bce0392df86db.php 第 38 行.
+NOTIC: [8] Array to string conversion /phpstudy/www/text/Application/Runtime/Cache/Home/fda40d6311b127439d0bce0392df86db.php 第 38 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009122s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000327s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000365s ]
+
+[ 2016-05-22T17:35:50+08:00 ] 114.249.209.255 /text/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000285s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `qipin_resume` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `qipin_position`  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_experience`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `qipin_money`  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 1 ) LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 2 ) LIMIT 3   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_resume` INNER JOIN qipin_position on qipin_resume.p_id = qipin_position.p_id  WHERE (  qipin_position.p_id = 3 ) LIMIT 3   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: sou1 /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: sou /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+NOTIC: [8] Undefined index: pid /phpstudy/www/text/Application/Home/Controller/IndexController.class.php 第 33 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007632s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000399s ]
+
