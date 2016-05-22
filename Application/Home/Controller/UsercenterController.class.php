@@ -43,7 +43,7 @@ class UsercenterController extends Controller {
     	// if (!empty($data['r_img'])) {
     		$upload = new \Think\Upload();// 实例化上传类  
 	  		$upload->autoSub  = false; //不允许创建自动创建子目录 
-	  		// $upload->saveName='time';
+	  		$upload->saveName='time';
 	  		$upload->maxSize   = 3145728 ;// 设置附件上传大小    
 	  		$upload->exts      = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型 
 	  		$upload->rootPath  =  './Public/Uploads/';
@@ -88,21 +88,6 @@ class UsercenterController extends Controller {
     	// print_r($data);die;
     	// print_r($_FILES);die;
     	// add($data='',$options=array(),$replace=true);
-    }
-    public function aaa(){
-    	$upload = new \Think\Upload();// 实例化上传类  
-  		$upload->autoSub  = false; //不允许创建自动创建子目录 
-  		$upload->saveName='time';
-  		$upload->maxSize   = 3145728 ;// 设置附件上传大小    
-  		$upload->exts      = array('jpg', 'gif', 'png', 'jpeg');// 设置附件上传类型 
-  		$upload->rootPath  =  './Public/uploads/';
-  		//$upload->savePath  =  'uploads/'; // 设置附件上传目录    // 上传文件    
-  		$info   =   $upload->upload();   
-  		//var_dump($upload->getError());die;
-  		print_r($info);die;
-  		if(!$info) {// 上传错误提示错误信息        
-  			$this->error($upload->getError());    
-  		}
     }
     //收到邀请
     public function invite(){
