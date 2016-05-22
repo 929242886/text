@@ -17,13 +17,13 @@ var ctx = "h";
 console.log(1);
 </script>
 <link href="h/images/favicon.ico" rel="Shortcut Icon">
-<link href="/text/Public/style/css/style.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/style/css/external.min.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/style/css/popup.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/text/Public/style/js/jquery.1.10.1.min.js"></script>
-<script src="/text/Public/style/js/jquery.lib.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/text/Public/style/js/ajaxfileupload.js"></script>
-<script src="/text/Public/style/js/additional-methods.js" type="text/javascript"></script>
+<link href="/xiangmu/text/Public/style/css/style.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/style/css/external.min.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/style/css/popup.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/xiangmu/text/Public/style/js/jquery.1.10.1.min.js"></script>
+<script src="/xiangmu/text/Public/style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/xiangmu/text/Public/style/js/ajaxfileupload.js"></script>
+<script src="/xiangmu/text/Public/style/js/additional-methods.js" type="text/javascript"></script>
 <!--[if lte IE 8]>
     <script type="text/javascript" src="js/excanvas.js"></script>
 <![endif]-->
@@ -37,7 +37,7 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a class="logo" href="h/">
-    			<img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="/text/Public/images/logo.png">
+    			<img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="/xiangmu/text/Public/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="index.html">轻轻松松找人才</a></li>
@@ -71,7 +71,7 @@ var youdao_conv_id = 271546;
         <dl class="c_section">
             
             <dd>
-            	            	<form method='post' action="/text/index.php/Home/Company/message">
+            	            	<form method='post' action="/xiangmu/text/index.php/Home/Company/update">
                                 <input type="hidden" name='e_id' value="<?php echo ($row["e_id"]); ?>">
             		<table class="savePassword">
             			<tbody>
@@ -81,10 +81,7 @@ var youdao_conv_id = 271546;
                             <td class="c7"><?php echo ($row["e_phone"]); ?></td>
             					           				
             			</tr>
-                        <tr>
-                            <td><input type="hidden" id='phone' name='e_phone' value="<?php echo ($row["e_phone"]); ?>"></td>
-                            <td><input  type="text" style="width:110px">　　<input type="button" id='zphone' onClick="get_mobile_code();" value="获取验证码" style="height:50px"></td>
-                        </tr>
+                       
             			<tr>
             				<td class="label">新密码</td>
             				<td><input type="password" maxlength="16" id="e_pwd" name="e_pwd" style="background-image: url(images/img/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;"></td>
@@ -111,7 +108,7 @@ var youdao_conv_id = 271546;
         </dl>
     </div>
 
-<script type="text/javascript"  src="/text/Public/style/js/jquery.js"></script>
+<script type="text/javascript"  src="/xiangmu/text/Public/style/js/jquery.js"></script>
     <script>
     //获取验证码
      function get_mobile_code()

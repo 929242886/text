@@ -1,6 +1,6 @@
 <?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html xmlns:wb="http://open.weibo.com/wb"><head>
-</script><script type="text/javascript" async="" src="/text/Public/js/conversion.js"></script><script src="/text/Public/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
+</script><script type="text/javascript" async="" src="/xiangmu/text/Public/js/conversion.js"></script><script src="/xiangmu/text/Public/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
 <meta content="no-siteapp" http-equiv="Cache-Control">
 <link  media="handheld" rel="alternate">
 <!-- end 云适配 -->
@@ -32,27 +32,27 @@ var ctx = "h";
 console.log(1);
 </script>
 <link href="h/images/favicon.ico" rel="Shortcut Icon">
-<link href="/text/Public/css/style.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/css/external.min.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/css/popup.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/text/Public/js/jquery.1.10.1.min.js"></script>
-<script src="/text/Public/js/jquery.lib.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/text/Public/js/ajaxfileupload.js"></script>
-<script src="/text/Public/js/additional-methods.js" type="text/javascript"></script>
+<link href="/xiangmu/text/Public/css/style.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/css/external.min.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/css/popup.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/xiangmu/text/Public/js/jquery.1.10.1.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/xiangmu/text/Public/js/ajaxfileupload.js"></script>
+<script src="/xiangmu/text/Public/js/additional-methods.js" type="text/javascript"></script>
 <!--[if lte IE 8]>
-    <script type="text/javascript" src="/text/Public/js/excanvas.js"></script>
+    <script type="text/javascript" src="/xiangmu/text/Public/js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
 </script> 
-<script src="/text/Public/js/conv.js" type="text/javascript"></script>
-<script src="/text/Public/js/ajaxCross.json" charset="UTF-8"></script></head>
+<script src="/xiangmu/text/Public/js/conv.js" type="text/javascript"></script>
+<script src="/xiangmu/text/Public/js/ajaxCross.json" charset="UTF-8"></script></head>
 <body>
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
-    		<a class="logo" href="/text/index.php">
-    			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="/text/Public/images/logo.png">
+    		<a class="logo" href="/xiangmu/text/index.php">
+    			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="/xiangmu/text/Public/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="index.html">轻轻松松找人才</a></li>
@@ -75,17 +75,18 @@ var youdao_conv_id = 271546;
     <div id="container">
         	<div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-     	        <dt><h3>用户中心</h3></dt>
-     	        <dd><a class="hover" href="/text/index.php/Home/Usercenter/index">我的简历</a></dd>
-                <dd><a href="/text/index.php/Home/Usercenter/invite">收到邀请</a></dd>
-        		<dd><a href="updatePwd.html">模拟面试记录</a></dd>
+     	        <dt><h3><h4><font color='#6666ff'><a href="/xiangmu/text/index.php">首页</a>>用户中心>我的账号</font></h4></h3></dt>
+
+     	        <dd><a class="hover" href="/xiangmu/text/index.php/Home/Usercenter/index">我的简历</a></dd>
+                <dd><a href="/xiangmu/text/index.php/Home/Usercenter/invite">收到邀请</a></dd>
+        		<dd><a href="/xiangmu/text/index.php/Home/Usercenter/simulation">模拟面试记录</a></dd>
             </dl>
 </div>
 <input type="hidden" id="hasSidebar" value="1">	<div class="content user_modifyContent">
         <dl class="c_section">
             <dd>
 
-            	            	<form id="updatePswForm" action="/text/index.php/Home/Usercenter/doadd" method="post" enctype="multipart/form-data" >
+            	            	<form id="updatePswForm" action="/xiangmu/text/index.php/Home/Usercenter/doadd" method="post" enctype="multipart/form-data" >
             		<!-- <table class="savePassword">
             			<tbody><tr>
             				<td>登录邮箱</td>
@@ -217,7 +218,7 @@ var youdao_conv_id = 271546;
             				<td>&nbsp;</td>
             				<td><input class="btn_profile_save" type="submit" value="保 存"></td>
             			</tr>	<div id="img">
-            			<img src="/text/Public/Uploads/<?php echo $arr['r_img']; ?>" alt="" onerror="javascript:this.src='/text/Public/Uploads/1.jpg';" width="100px" height="100px">
+            			<img src="/xiangmu/text/Public/Uploads/<?php echo $arr['r_img']; ?>" alt="" onerror="javascript:this.src='/xiangmu/text/Public/Uploads/1.jpg';" width="100px" height="100px">
             			<input type="file" name="r_img">
             		</div>
             		</table>
@@ -390,12 +391,12 @@ var youdao_conv_id = 271546;
 	</div>
 	
 </div>
-<script type="text/javascript" charset="utf-8" src="/text/Public/bianjiqi/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/text/Public/bianjiqi/ueditor.all.min.js"> </script>
+<script type="text/javascript" charset="utf-8" src="/xiangmu/text/Public/bianjiqi/ueditor.config.js"></script>
+<script type="text/javascript" charset="utf-8" src="/xiangmu/text/Public/bianjiqi/ueditor.all.min.js"> </script>
 <script type="text/javascript" charset="utf-8">
     var ue = UE.getEditor('editor');
 </script>
-<!------------------------------------- end -----------------------------------------> <script src="/text/Public/js/setting.js"></script>
+<!------------------------------------- end -----------------------------------------> <script src="/xiangmu/text/Public/js/setting.js"></script>
 			<div class="clear"></div>
 			<input type="hidden" value="" id="resubmitToken">
 	    	<a rel="nofollow" title="回到顶部" id="backtop"></a>
@@ -411,8 +412,8 @@ var youdao_conv_id = 271546;
 		</div>
 	</div>
 
-<script src="/text/Public/js/core.min.js" type="text/javascript"></script>
-<script src="/text/Public/js/popup.min.js" type="text/javascript"></script>
+<script src="/xiangmu/text/Public/js/core.min.js" type="text/javascript"></script>
+<script src="/xiangmu/text/Public/js/popup.min.js" type="text/javascript"></script>
 
 <!--  -->
 

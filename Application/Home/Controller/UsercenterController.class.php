@@ -132,4 +132,29 @@ class UsercenterController extends Controller {
    			echo 0;
    		}
    	}
+	 /**
+     * @param 
+     * @return array();
+     * @author 李江坤
+     */
+    public function simulation()
+    {
+       $db = M('history');
+            $where = 'h_id > 0';
+            $count      = $db->where($where)->count();// 查询满足要求的总记录数
+            $Page       = new \Think\Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
+            $Page->setConfig('first','第一页');
+            $Page->setConfig('prev','上一页');
+            $Page->setConfig('next','下一页');
+            $Page->setConfig('end','最后一页');
+            $show       = $Page->show();// 分页显示输出
+            // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
+            $list = $db->join('left join qipin_user on  qipin_user.u_id = qipin_history.u_id')
+              ->join('left join qipin_month on  qipin_month.mo_id = qipin_history.mo_id')
+              ->limit($Page->firstRow.','.$Page->listRows)->select();
+       $this->assign('list',$list);
+       $this->assign('count',$count);//总数
+       $this->assign('page',$show);// 赋值分页输出
+       $this->display();
+    }
 }

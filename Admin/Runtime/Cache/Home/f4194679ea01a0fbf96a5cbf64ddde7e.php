@@ -47,11 +47,11 @@
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title>Document</title>
 	<!-- basic styles -->
-<link href="/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/text/Public/css/font-awesome.min.css" />
+<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/text/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -62,25 +62,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/text/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/text/Public/js/ace-extra.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/text/Public/js/html5shiv.js"></script>
-<script src="/text/Public/js/respond.min.js"></script>
+<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
+<script src="/xiangmu/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -90,10 +90,10 @@
 
 				<li class="light-blue">
 					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-						<img class="nav-user-photo" src="/text/Public/avatars/user.jpg" alt="Jason's Photo" />
+						<img class="nav-user-photo" src="/xiangmu/text/Public/avatars/user.jpg" alt="Jason's Photo" />
 						<span class="user-info">
 							<small>欢迎光临,</small>
-							ADMIN
+							<?php echo $_SESSION['admin_name']?>
 						</span>
 
 						<i class="icon-caret-down"></i>
@@ -104,7 +104,7 @@
 
 
 						<li>
-							<a href="/text/admin.php/Home/Login/logout">
+							<a href="/xiangmu/text/admin.php/Home/Login/logout">
 								<i class="icon-off"></i>
 								退出
 							</a>
@@ -152,13 +152,13 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 	<title></title>
-	<link href="/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+	<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
  <!-- basic styles -->
-<link href="/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/text/Public/css/font-awesome.min.css" />
+<link href="/xiangmu/text/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome.min.css" />
 
 <!--[if IE 7]>
-  <link rel="stylesheet" href="/text/Public/css/font-awesome-ie7.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/font-awesome-ie7.min.css" />
 <![endif]-->
 
 <!-- page specific plugin styles -->
@@ -169,25 +169,25 @@
 
 <!-- ace styles -->
 
-<link rel="stylesheet" href="/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-skins.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/xiangmu/text/Public/css/ace-skins.min.css" />
 
 <!--[if lte IE 8]>
-  <link rel="stylesheet" href="/text/Public/css/ace-ie.min.css" />
+  <link rel="stylesheet" href="/xiangmu/text/Public/css/ace-ie.min.css" />
 <![endif]-->
 
 <!-- inline styles related to this page -->
 
 <!-- ace settings handler -->
 
-<script src="/text/Public/js/ace-extra.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace-extra.min.js"></script>
 
 <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 <!--[if lt IE 9]>
-<script src="/text/Public/js/html5shiv.js"></script>
-<script src="/text/Public/js/respond.min.js"></script>
+<script src="/xiangmu/text/Public/js/html5shiv.js"></script>
+<script src="/xiangmu/text/Public/js/respond.min.js"></script>
 <![endif]-->
 </head>
 <body>
@@ -208,7 +208,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/text/admin.php/Home/Enterprise/index">
+							<a href="/xiangmu/text/admin.php/Home/Enterprise/index">
 								<i class="icon-double-angle-right"></i>
 								企业
 							</a>
@@ -226,7 +226,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/text/admin.php/Home/Condition/../resume/resume">
+							<a href="/xiangmu/text/admin.php/Home/Condition/../resume/resume">
 								<i class="icon-double-angle-right"></i>
 								学生简历
 							</a>
@@ -245,21 +245,21 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/text/admin.php/Home/Condition/../condition/position">
+							<a href="/xiangmu/text/admin.php/Home/Condition/../condition/position">
 								<i class="icon-double-angle-right"></i>
 								职位
 							</a>
 						</li> 
 
 						<li>
-							<a href="/text/admin.php/Home/Condition/../condition/experience">
+							<a href="/xiangmu/text/admin.php/Home/Condition/../condition/experience">
 								<i class="icon-double-angle-right"></i>
 								经验
 							</a>
 						</li> 
 
 						<li>
-							<a href="/text/admin.php/Home/Condition/../condition/salary">
+							<a href="/xiangmu/text/admin.php/Home/Condition/../condition/salary">
 								<i class="icon-double-angle-right"></i>
 								薪资
 							</a>
@@ -312,14 +312,14 @@
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
 
-<form class="form-inline definewidth m20" action="/text/admin.php/Home/Condition/salary" method="get">
+<form class="form-inline definewidth m20" action="/xiangmu/text/admin.php/Home/Condition/salary" method="get">
     薪资名称：
     <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="<?php echo ($keyword); ?>">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>
 </form>
 
  	 
- 	<form action="/text/admin.php/Home/Condition/salary_del_up_add" method="get">
+ 	<form action="/xiangmu/text/admin.php/Home/Condition/salary_del_up_add" method="get">
 	<table class="table table-bordered table-hover definewidth m10" >
 		    <thead> 
 		    <tr>
@@ -414,7 +414,7 @@
 
 <!--[if !IE]> -->
 
-<script src="/text/Public/js/jquery.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.min.js"></script>
 
 <!-- <![endif]-->
 
@@ -425,42 +425,42 @@
 <!--[if !IE]> -->
 
 <script type="text/javascript">
-	window.jQuery || document.write("<script src='/text/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+	window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 </script>
 
 <!-- <![endif]-->
 
 <!--[if IE]>
 <script type="text/javascript">
-window.jQuery || document.write("<script src='/text/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+window.jQuery || document.write("<script src='/xiangmu/text/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='/text/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	if("ontouchend" in document) document.write("<script src='/xiangmu/text/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 </script>
-<script src="/text/Public/js/bootstrap.min.js"></script>
-<script src="/text/Public/js/typeahead-bs2.min.js"></script>
+<script src="/xiangmu/text/Public/js/bootstrap.min.js"></script>
+<script src="/xiangmu/text/Public/js/typeahead-bs2.min.js"></script>
 
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-  <script src="/text/Public/js/excanvas.min.js"></script>
+  <script src="/xiangmu/text/Public/js/excanvas.min.js"></script>
 <![endif]-->
 
-<script src="/text/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="/text/Public/js/jquery.ui.touch-punch.min.js"></script>
-<script src="/text/Public/js/jquery.slimscroll.min.js"></script>
-<script src="/text/Public/js/jquery.easy-pie-chart.min.js"></script>
-<script src="/text/Public/js/jquery.sparkline.min.js"></script>
-<script src="/text/Public/js/flot/jquery.flot.min.js"></script>
-<script src="/text/Public/js/flot/jquery.flot.pie.min.js"></script>
-<script src="/text/Public/js/flot/jquery.flot.resize.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.slimscroll.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/xiangmu/text/Public/js/jquery.sparkline.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/xiangmu/text/Public/js/flot/jquery.flot.resize.min.js"></script>
 
 <!-- ace scripts -->
 
-<script src="/text/Public/js/ace-elements.min.js"></script>
-<script src="/text/Public/js/ace.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace-elements.min.js"></script>
+<script src="/xiangmu/text/Public/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
 

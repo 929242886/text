@@ -17,13 +17,13 @@ var ctx = "h";
 console.log(1);
 </script>
 <link href="h/images/favicon.ico" rel="Shortcut Icon">
-<link href="/text/Public/style/css/style.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/style/css/external.min.css" type="text/css" rel="stylesheet">
-<link href="/text/Public/style/css/popup.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/text/Public/style/js/jquery.1.10.1.min.js"></script>
-<script src="/text/Public/style/js/jquery.lib.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="/text/Public/style/js/ajaxfileupload.js"></script>
-<script src="/text/Public/style/js/additional-methods.js" type="text/javascript"></script>
+<link href="/xiangmu/text/Public/style/css/style.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/style/css/external.min.css" type="text/css" rel="stylesheet">
+<link href="/xiangmu/text/Public/style/css/popup.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/xiangmu/text/Public/style/js/jquery.1.10.1.min.js"></script>
+<script src="/xiangmu/text/Public/style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/xiangmu/text/Public/style/js/ajaxfileupload.js"></script>
+<script src="/xiangmu/text/Public/style/js/additional-methods.js" type="text/javascript"></script>
 <!--[if lte IE 8]>
     <script type="text/javascript" src="js/excanvas.js"></script>
 <![endif]-->
@@ -37,7 +37,7 @@ var youdao_conv_id = 271546;
 	<div id="header">
     	<div class="wrapper">
     		<a class="logo" href="h/">
-    			<img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="/text/Public/images/logo.png">
+    			<img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="/xiangmu/text/Public/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="index.html">轻轻松松找人才</a></li>
@@ -60,7 +60,7 @@ var youdao_conv_id = 271546;
     <div id="container">
         	<div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-     	        <dt><h4><font color='#6666ff'><a href="/text/index.php">首页</a>个人中心>邀请人才</font></h4></dt>
+     	        <dt><h4><font color='#6666ff'><a href="/xiangmu/text/index.php">首页</a>个人中心>邀请人才</font></h4></dt>
                 <dd><a href="index">我的账号</a></dd>
         <dd><a href="invite">已邀请人才</a></dd>
         <dd><a href="update">修改密码</a></dd>

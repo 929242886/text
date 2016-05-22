@@ -36,7 +36,7 @@ var youdao_conv_id = 271546;
 <div id="body">
     <div id="header">
         <div class="wrapper">
-            <a class="logo" href="h/">
+            <a class="logo" href="__APP__">
                 <img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="__PUBLIC__/images/logo.png">
             </a>
             <ul id="navheader" class="reset">
@@ -238,6 +238,20 @@ var youdao_conv_id = 271546;
            $('#s5').html(""); 
         }
      });
+	 //邮箱格式不正确不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var a=/^\w+@\w+\.(com|cn|net)$/; 
+           if(!a.test(e_email)){
+             $('#s5').html("<font color='red'>邮箱格式不正确</font>");
+             $(":password[id=e_email]").focus();  
+             check.preventDefault();//此处阻止提交表单 
+           }else{
+             $('#s5').html('');
+           }            
+        });  
+    });
+
      //规模为空不能提交
     $(document).ready(function(){  
         $(":submit[id=tijiao]").click(function(check){  
