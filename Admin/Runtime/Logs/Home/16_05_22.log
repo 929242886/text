@@ -1909,3 +1909,587 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
 
+[ 2016-05-22T17:38:20+08:00 ] 114.249.209.255 /text/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000330s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Undefined index: admin_name /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000022s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003792s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003827s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+
+[ 2016-05-22T17:38:23+08:00 ] 114.249.209.255 /text/admin.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000274s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000459s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004367s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004412s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000108s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000143s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-05-22T17:38:25+08:00 ] 112.64.235.247 /text/admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000250s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+NOTIC: [8] Undefined index: admin_name /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 64 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004050s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000168s ]
+
+[ 2016-05-22T17:38:28+08:00 ] 114.249.209.255 /text/admin.php/Home/Index/dologin
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000335s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+SQL: SHOW COLUMNS FROM `qipin_adminuser` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `qipin_adminuser` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `qipin_adminuser` WHERE ( a_user='admin' ) LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] A session had already been started - ignoring session_start() /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 30 行.
+NOTIC: [8] Undefined index: admin_id /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 32 行.
+SQL: SELECT * FROM `qipin_adminuser` INNER JOIN qipin_ur on qipin_ur.u_id=qipin_adminuser.a_id INNER JOIN qipin_role on qipin_ur.r_id=qipin_role.r_id INNER JOIN qipin_rp on qipin_rp.r_id=qipin_role.r_id INNER JOIN qipin_power on qipin_power.p_id=qipin_rp.p_id  WHERE ( a_user='admin' )  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000024s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000060s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003914s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003952s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2016-05-22T17:38:31+08:00 ] 114.249.209.255 /text/admin.php/Home/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008713s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008753s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000109s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000148s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000348s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000391s ]
+
+[ 2016-05-22T17:38:42+08:00 ] 114.249.219.231 /text/admin.php/Home/Enterprise/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `qipin_enterprise` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/EnterpriseController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_enterprise` WHERE (  e_name like '%%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_enterprise` WHERE (  e_name like '%%' ) ORDER BY e_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000094s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000134s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008736s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000377s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000424s ]
+
+[ 2016-05-22T17:38:44+08:00 ] 114.249.219.231 /text/admin.php/Home/resume/resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000284s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000301s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `qipin_resume` [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ResumeController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_resume` WHERE ( r_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_resume` WHERE ( r_id > 0 ) ORDER BY r_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009400s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009443s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000132s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2016-05-22T17:38:49+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/salary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 226 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_money` WHERE ( m_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_money` WHERE ( m_id > 0 ) ORDER BY m_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008214s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000092s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000125s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000365s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000405s ]
+
+[ 2016-05-22T17:38:51+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/experience
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 115 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_experience` WHERE ( ex_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_experience` WHERE ( ex_id > 0 ) ORDER BY ex_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000083s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000124s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008948s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008987s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000098s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000321s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2016-05-22T17:38:52+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_position` WHERE ( p_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_position` WHERE ( p_id > 0 ) ORDER BY p_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000103s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000169s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000358s ]
+
+[ 2016-05-22T17:47:32+08:00 ] 112.64.235.247 /text/admin.php/Home/Index/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000379s ]
+NOTIC: [2048] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') /phpstudy/www/text/Admin/Home/Controller/IndexController.class.php 第 111 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000026s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000064s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003653s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003690s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2016-05-22T18:53:59+08:00 ] 114.249.209.255 /text/admin.php/Home/condition/experience
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000328s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 115 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_experience` WHERE ( ex_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_experience` WHERE ( ex_id > 0 ) ORDER BY ex_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000132s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007955s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007994s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000091s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-05-22T18:54:21+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/experience
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 115 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_experience` WHERE ( ex_id > 0 ) LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `qipin_experience` WHERE ( ex_id > 0 ) ORDER BY ex_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000161s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009375s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000115s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000149s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2016-05-22T18:54:27+08:00 ] 114.249.219.231 /text/admin.php/Home/Condition/experience_delete?add=%E6%B7%BB%E5%8A%A0
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000232s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000383s ]
+NOTIC: [8] Undefined index: ex_id /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 148 行.
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: submit /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 150 行.
+NOTIC: [8] Undefined index: update /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 159 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000077s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000116s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007452s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000090s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000122s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000411s ]
+
+[ 2016-05-22T18:54:31+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/salary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000374s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 226 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_money` WHERE ( m_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_money` WHERE ( m_id > 0 ) ORDER BY m_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008055s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008095s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000366s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000414s ]
+
+[ 2016-05-22T18:54:47+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/salary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000276s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 226 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_money` WHERE ( m_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_money` WHERE ( m_id > 0 ) ORDER BY m_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000119s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008193s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008232s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000095s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000323s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000382s ]
+
+[ 2016-05-22T18:54:50+08:00 ] 114.249.219.231 /text/admin.php/Home/condition/position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_position` WHERE ( p_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_position` WHERE ( p_id > 0 ) ORDER BY p_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000079s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008138s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000355s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-05-22T18:55:08+08:00 ] 114.249.219.231 /text/admin.php/Home/Condition/position/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000230s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000335s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_position` WHERE ( p_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_position` WHERE ( p_id > 0 ) ORDER BY p_id desc  LIMIT 2,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000081s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000120s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008096s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008136s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000308s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2016-05-22T18:55:10+08:00 ] 114.249.219.231 /text/admin.php/Home/Condition/position/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000234s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000340s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0005s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_position` WHERE ( p_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_position` WHERE ( p_id > 0 ) ORDER BY p_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008078s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008118s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000094s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000607s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000652s ]
+
+[ 2016-05-22T18:56:02+08:00 ] 114.249.219.231 /text/admin.php/Home/resume/resume
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000013s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `qipin_resume` [ RunTime:0.0014s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ResumeController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_resume` WHERE ( r_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_resume` WHERE ( r_id > 0 ) ORDER BY r_id desc  LIMIT 0,2   [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010114s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000097s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2016-05-22T18:56:05+08:00 ] 114.249.219.231 /text/admin.php/Home/Enterprise/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000272s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+SQL: SHOW COLUMNS FROM `qipin_enterprise` [ RunTime:0.0008s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/EnterpriseController.class.php 第 15 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_enterprise` WHERE (  e_name like '%%' ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_enterprise` WHERE (  e_name like '%%' ) ORDER BY e_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000098s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000138s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000102s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000137s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000420s ]
+
+[ 2016-05-22T18:57:51+08:00 ] 114.249.209.255 /text/admin.php/Home/condition/salary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 226 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_money` WHERE ( m_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_money` WHERE ( m_id > 0 ) ORDER BY m_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008162s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008202s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000126s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000311s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000351s ]
+
+[ 2016-05-22T18:57:55+08:00 ] 114.249.209.255 /text/admin.php/Home/condition/position
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000239s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `qipin_position` [ RunTime:0.0007s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 13 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_position` WHERE ( p_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_position` WHERE ( p_id > 0 ) ORDER BY p_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000092s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000133s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009111s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009199s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000107s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000346s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-05-22T18:57:57+08:00 ] 114.249.209.255 /text/admin.php/Home/condition/experience
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000337s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `qipin_experience` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 115 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_experience` WHERE ( ex_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_experience` WHERE ( ex_id > 0 ) ORDER BY ex_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000082s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000122s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008243s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000096s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000398s ]
+
+[ 2016-05-22T18:57:59+08:00 ] 114.249.209.255 /text/admin.php/Home/condition/salary
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000012s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000235s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+SQL: SHOW COLUMNS FROM `qipin_money` [ RunTime:0.0006s ]
+NOTIC: [8] Undefined index: keyword /phpstudy/www/text/Admin/Home/Controller/ConditionController.class.php 第 226 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `qipin_money` WHERE ( m_id > 0 ) LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `qipin_money` WHERE ( m_id > 0 ) ORDER BY m_id desc  LIMIT 0,2   [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000084s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000123s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000111s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000376s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+

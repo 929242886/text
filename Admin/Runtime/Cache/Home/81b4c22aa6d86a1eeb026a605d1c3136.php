@@ -1,45 +1,31 @@
-<?php if (!defined('THINK_PATH')) exit();?>﻿<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>企聘王</title>
+<title>学生简历</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- basic styles -->
-<link href="/text/Public/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="/text/Public/css/font-awesome.min.css" />
+<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
 
-<!--[if IE 7]>
-  <link rel="stylesheet" href="/text/Public/css/font-awesome-ie7.min.css" />
-<![endif]-->
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
 
-<!-- page specific plugin styles -->
 
-<!-- fonts -->
 
-<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300" />
 
-<!-- ace styles -->
 
-<link rel="stylesheet" href="/text/Public/css/ace.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="/text/Public/css/ace-skins.min.css" />
-
-<!--[if lte IE 8]>
-  <link rel="stylesheet" href="/text/Public/css/ace-ie.min.css" />
-<![endif]-->
-
-<!-- inline styles related to this page -->
-
-<!-- ace settings handler -->
-
-<script src="/text/Public/js/ace-extra.min.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-<!--[if lt IE 9]>
-<script src="/text/Public/js/html5shiv.js"></script>
-<script src="/text/Public/js/respond.min.js"></script>
-<![endif]-->
+    </style>
 </head>
 
 <body>
@@ -58,7 +44,6 @@
 			</a><!-- /.brand -->
 		</div><!-- /.navbar-header -->
 
-		
 		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
@@ -244,7 +229,7 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/text/admin.php/Home/Index/../resume/resume">
+							<a href="/text/admin.php/Home/Condition/../resume/resume">
 								<i class="icon-double-angle-right"></i>
 								学生简历
 							</a>
@@ -263,21 +248,21 @@
 
 					<ul class="submenu">
 						<li>
-							<a href="/text/admin.php/Home/Index/../condition/position">
+							<a href="/text/admin.php/Home/Condition/../condition/position">
 								<i class="icon-double-angle-right"></i>
 								职位
 							</a>
 						</li> 
 
 						<li>
-							<a href="/text/admin.php/Home/Index/../condition/experience">
+							<a href="/text/admin.php/Home/Condition/../condition/experience">
 								<i class="icon-double-angle-right"></i>
 								经验
 							</a>
 						</li> 
 
 						<li>
-							<a href="/text/admin.php/Home/Index/../condition/salary">
+							<a href="/text/admin.php/Home/Condition/../condition/salary">
 								<i class="icon-double-angle-right"></i>
 								薪资
 							</a>
@@ -295,8 +280,6 @@
 </body>
 </html> 
 
-			
-
 			<script type="text/javascript">
 				try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
 			</script>
@@ -313,14 +296,14 @@
 						<i class="icon-home home-icon"></i>
 						<a href="#">首页</a>
 					</li>
-					<li class="active">企聘王控制台</li>
+					<li class="active">经验控制台</li>
 				</ul><!-- .breadcrumb -->
 			</div>
 
 			<div class="page-content">
 				<div class="page-header">
 					<h1>
-						企聘王控制台
+						经验控制台
 						<small>
 							<i class="icon-double-angle-right"></i>
 							 查看
@@ -332,20 +315,14 @@
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
 
-						<div class="alert alert-block alert-success">
-							<button type="button" class="close" data-dismiss="alert">
-								<i class="icon-remove"></i>
-							</button>
+ 
 
-							<i class="icon-ok green"></i>
-
-							欢迎使用
-							<strong class="green">
-								企聘王后台系统
-							<small>(v1.2)</small>
-							</strong>
-							,这里为你提供更更全面的招聘信息.	
-					  </div>
+ 		<form action="/text/admin.php/Home/Condition/experience_insert" method="post">
+  				经验添加：<input type="text" id="e_year" name="e_year">到<input type="hidden" id="y" name="y" value="-"><input type="text" id="e_year2" name="e_year2">年<input type="hidden" id="year" name="year" value="年">
+ 				
+  			<input type="submit" value="提交">
+ 		</form>
+					
 
 
 
@@ -658,6 +635,7 @@ window.jQuery || document.write("<script src='/text/Public/js/jquery-1.10.2.min.
 	
 	})
 </script>
+ 
 
 </body>
 </html>
