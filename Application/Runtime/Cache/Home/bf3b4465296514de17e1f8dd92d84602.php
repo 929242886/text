@@ -44,10 +44,10 @@ var youdao_conv_id = 271546;
 <ul class="reset" id="navheader">
 <li ><a href="">首页</a></li>
 <li><a href="/text/index.php/Home/Company/index">找人才</a></li>
-<li><a href="personal.html">个人中心</a></li>
+<li><a href="/text/index.php/Home/Usercenter/index">用户中心</a></li>
 </ul>
 <ul class="loginTop">
-<li><a href="login.html" rel="nofollow">用户登陆</a></li> 
+<li><a href="/text/index.php" rel="nofollow">用户登陆</a></li> 
 <li>|</li>
 <li><a href="/text/index.php/Home/Login/index" rel="nofollow">企业登陆</a></li>
 </ul>
