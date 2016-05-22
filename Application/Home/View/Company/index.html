@@ -83,10 +83,18 @@ var youdao_conv_id = 271546;
                              </td>                            
                         </tr>
                         <tr>
+                            <td></td>
+                            <td><span id='s1'></span></td>
+                        </tr>
+                        <tr>
                             <td class="label">公司简介：</td>
                             <td>
                                 <input type="text" id="e_description" name="e_description" value="{$data.e_description}" style="background-image: url(images/img/0CQnd2Jos49xUAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;">
                              </td>                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span id='s2'></span></td>
                         </tr>
                         <tr>
                             <td class="label">法人代表：</td>
@@ -94,11 +102,19 @@ var youdao_conv_id = 271546;
                                 <input type="text" id="e_legal" name="e_legal" value="{$data.e_legal}" style="background-image: url(images/img/0CQnd2Jos49xUAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;">
                              </td>                            
                         </tr>
+                        <tr>
+                            <td></td>
+                            <td><span id='s3'></span></td>
+                        </tr>
                        <tr>
                             <td class="label">营业执照：</td>
                             <td>
-                                <span><img src="__PUBLIC__/Uploads/{$data.e_photo}" alt="" style="width:90px;height:80px"></span><input type="file" name="e_photo">
+                                <span><img src="__PUBLIC__/Uploads/{$data.e_photo}" alt="" style="width:90px;height:80px"></span><input type="file" id='e_photo' name="e_photo">
                              </td>                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span style="font-size:15px;color:blue">温馨提示：营业执照必须上传</span></td>
                         </tr>
                         <tr>
                             <td class="label">企业邮箱：</td>
@@ -106,12 +122,19 @@ var youdao_conv_id = 271546;
                                 <input type="text" id="e_email" name="e_email" value="{$data.e_email}" style="background-image: url(images/img/0CQnd2Jos49xUAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;">
                              </td>                            
                         </tr>
-                        
+                        <tr>
+                            <td></td>
+                            <td><span id='s5'></span></td>
+                        </tr>
                         <tr>
                             <td class="label">规  模：</td>
                             <td>
                                 <input type="text" id="e_size" name="e_size" value="{$data.e_size}" style="background-image: url(images/img/0CQnd2Jos49xUAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;">
                              </td>                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><span id='s6'></span></td>
                         </tr>
                         <tr>
                             <td class="label">公司地址：</td>
@@ -120,15 +143,142 @@ var youdao_conv_id = 271546;
                              </td>                            
                         </tr>
                         <tr>
+                            <td></td>
+                            <td><span id='s7'></span></td>
+                        </tr>
+                        <tr>
                             <td>&nbsp;</td>
-                            <td><input type="submit" value="保 存"></td>
+                            <td><input type="submit" id='tijiao' value="保 存"></td>
                         </tr>
                     </tbody></table>
                 </form>
                             </dd>
         </dl>
     </div>
-
+<script type="text/javascript"  src="__PUBLIC__/style/js/jquery.js"></script>
+    <script>
+    //公司名称为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_name]").val();  
+            if(val==""){   
+                $('#s1').html("<font color='red'>公司名称不能为空</font>");
+                $(":text[id=e_name]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_name').blur(function(){
+        var e_name=$('#e_name').val();
+        if(e_name=='')
+        {
+          $('#s1').html("<font color='red'>公司名称不能为空</font>");  
+        }else{
+           $('#s1').html(""); 
+        }
+     });
+     //公司简介为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_description]").val();  
+            if(val==""){   
+                $('#s2').html("<font color='red'>公司简介不能为空</font>");
+                $(":text[id=e_description]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_description').blur(function(){
+        var e_description=$('#e_description').val();
+        if(e_description=='')
+        {
+          $('#s2').html("<font color='red'>公司简介不能为空</font>");  
+        }else{
+           $('#s2').html(""); 
+        }
+     });
+     //法人代表为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_legal]").val();  
+            if(val==""){   
+                $('#s3').html("<font color='red'>法人代表不能为空</font>");
+                $(":text[id=e_legal]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_legal').blur(function(){
+        var e_legal=$('#e_legal').val();
+        if(e_legal=='')
+        {
+          $('#s3').html("<font color='red'>法人代表不能为空</font>");  
+        }else{
+           $('#s3').html(""); 
+        }
+     });
+  
+     //企业邮箱为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_email]").val();  
+            if(val==""){   
+                $('#s5').html("<font color='red'>企业邮箱不能为空</font>");
+                $(":text[id=e_email]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_email').blur(function(){
+        var e_email=$('#e_email').val();
+        if(e_email=='')
+        {
+          $('#s5').html("<font color='red'>企业邮箱不能为空</font>");  
+        }else{
+           $('#s5').html(""); 
+        }
+     });
+     //规模为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_size]").val();  
+            if(val==""){   
+                $('#s6').html("<font color='red'>规模不能为空</font>");
+                $(":text[id=e_size]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_size').blur(function(){
+        var e_size=$('#e_size').val();
+        if(e_size=='')
+        {
+          $('#s6').html("<font color='red'>规模不能为空</font>");  
+        }else{
+           $('#s6').html(""); 
+        }
+     });
+     //公司地址为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=e_area]").val();  
+            if(val==""){   
+                $('#s7').html("<font color='red'>规模不能为空</font>");
+                $(":text[id=e_area]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });    
+     $('#e_area').blur(function(){
+        var e_area=$('#e_area').val();
+        if(e_area=='')
+        {
+          $('#s7').html("<font color='red'>规模不能为空</font>");  
+        }else{
+           $('#s7').html(""); 
+        }
+     });
+    </script>
 
 <!------------------------------------- 弹窗lightbox ----------------------------------------->
 <div style="display:none;">

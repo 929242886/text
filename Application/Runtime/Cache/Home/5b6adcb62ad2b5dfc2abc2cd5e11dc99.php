@@ -7,16 +7,16 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Login Form</title>
-  <link rel="stylesheet" href="/text/Public/style/css/style2.css">
+  <link rel="stylesheet" href="/Public/style/css/style2.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<img border='0' src='/text/Public/images/background.jpg' width='100%' height='100%' style='position: absolute;left:0px;top:0px;z-index: -1'>
+<img border='0' src='/Public/images/background.jpg' width='100%' height='100%' style='position: absolute;left:0px;top:0px;z-index: -1'>
   <section class="container">
-<center><img src="/text/Public/images/logo.png" alt="" width="350px"></center>
+<center><img src="/Public/images/logo.png" alt="" width="350px"></center>
     <div class="login">
       <h1>企业登陆</h1>
-      <form method="post" action="/text/index.php/Home/Login/loginok">
+      <form method="post" action="/index.php/Home/Login/loginok">
         <p><input type="text" name="e_phone" value="<?php if($_COOKIE['name']!=''){echo $_COOKIE['name'];} ?>" placeholder="手机号"></p>
         <p><input type="password" name="e_pwd" value="<?php if($_COOKIE['pwd']!=''){echo $_COOKIE['pwd'];} ?>" placeholder="密码"></p>
         <p class="remember_me">

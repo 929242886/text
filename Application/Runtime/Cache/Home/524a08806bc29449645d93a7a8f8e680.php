@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
 <!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
 <!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
@@ -7,13 +7,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>Login Form</title>
-  <link rel="stylesheet" href="__PUBLIC__/style/css/style2.css">
+  <link rel="stylesheet" href="/Public/style/css/style2.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
-<img border='0' src='__PUBLIC__/images/background.jpg' width='100%' height='100%' style='position: absolute;left:0px;top:0px;z-index: -1'>
+<img border='0' src='/Public/images/background.jpg' width='100%' height='100%' style='position: absolute;left:0px;top:0px;z-index: -1'>
   <section class="container">
-  <center><img src="__PUBLIC__/images/logo.png" alt="" width="350px"></center>
+  <center><img src="/Public/images/logo.png" alt="" width="350px"></center>
     <div class="login">
       <h1>企业注册</h1>
       <form method="post" action="registerok">
@@ -29,7 +29,7 @@
        
       </form>
     </div>
-<script type="text/javascript" src="__PUBLIC__/style/js/jquery.js"></script>
+<script type="text/javascript" src="/Public/style/js/jquery.js"></script>
 <script>
 $(function(){
 $('#e_phone').click(function(){
@@ -78,13 +78,15 @@ $(document).ready(function(){
 </script>
 <script language="javascript">
  function get_mobile_code(){
-        function get_mobile_code(){
-        $.post('sms.php', {mobile:jQuery.trim($('#e_phone').val()),send_code:<?php echo $_SESSION['send_code'];?>}, function(msg) {
-            alert(jQuery.trim(unescape(msg)));
-      if(msg=='提交成功'){
-        RemainTime();
+         $.ajax({
+      url: "sms.php",
+      type: "Post",
+      data: "mobile=" + $("#e_phone").val(),
+      success: function(msg) {
+     
+          alert(msg);
       }
-        });
+  })
   };
   var iTime = 59;
   var Account;
