@@ -1,8 +1,52 @@
 <?php
+/**
+ * author : shilinpeng
+ * time   : 2016/5/20
+ */
 namespace Home\Controller;
 use Think\Controller;
 class IndexController extends Controller {
+	
+	/**
+	 * 首页
+	 */
     public function index(){
-        $this->show('<style type="text/css">*{ padding: 0; margin: 0; } div{ padding: 4px 48px;} body{ background: #fff; font-family: "微软雅黑"; color: #333;font-size:24px} h1{ font-size: 100px; font-weight: normal; margin-bottom: 12px; } p{ line-height: 1.8em; font-size: 36px } a,a:hover,{color:blue;}</style><div style="padding: 24px 48px;"> <h1>:)</h1><p>欢迎使用 <b>ThinkPHP</b>！</p><br/>版本 V{$Think.version}</div><script type="text/javascript" src="http://ad.topthink.com/Public/static/client.js"></script><thinkad id="ad_55e75dfae343f5a1"></thinkad><script type="text/javascript" src="http://tajs.qq.com/stats?sId=9347272" charset="UTF-8"></script>','utf-8');
+		
+		$position = D('position');
+		$experience = D('experience');
+		$money = D('money');
+		$resume = D('resume');
+		$positionall = $position->getposition();
+		$experienceall = $experience->getexperience();
+		$moneyall = $money->getmoney();
+		$resumeoneall = $resume->getresumeone();
+		$resumetwoall = $resume->getresumetwo();
+		$resumethreeall = $resume->getresumethree();
+		//print_r($resumethreeall);die;
+		$this->assign('positionall',$positionall);
+		$this->assign('experienceall',$experienceall);
+		$this->assign('moneyall',$moneyall);
+		$this->assign('resumeoneall',$resumeoneall);
+		$this->assign('resumetwoall',$resumetwoall);
+		$this->assign('resumethreeall',$resumethreeall);
+		//echo $_GET['pid'];die;
+		if($_GET['sou1'] || $_GET['sou'] || $_GET['pid']){
+			if(!empty($_GET['pid'])){
+				$positionRows = $resume->positionRows($_GET['pid']);
+				$this->assign('positionRows',$positionRows);
+			}
+			$this->display('search');
+		}else{
+			$this->display();
+		}
+		
     }
+	/**
+	 * 搜索后的页面 或 查看更多页面
+	 */
+	public function search(){
+
+		$this->display();
+
+	}
 }

@@ -1,0 +1,16 @@
+<include file="index:xia"/>
+<h3>
+	<span>共找到2个符合条件的简历</span>
+	<span>排序</span>
+	<a href="">大图模式</a>
+	<a href="">列表模式</a>
+</h3>
+<table>
+<foreach name='positionRows' item='p'>
+	<tr>
+		<td><img src="__PUBLIC__/images/{$p.r_img}" alt="" width="150px;" height="130px;"/></td>
+		<td>{$p.r_name}</td>
+		<td>创建时间:{$p.r_addtime}</td>
+	</tr>
+</foreach>
+</table>
