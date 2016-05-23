@@ -1,0 +1,43 @@
+<include file="index:top"/>
+<include file="index:keyword"/>
+
+<h3 style="margin-left:130px;">
+	<span>共找到{$counts}个符合条件的简历</span>
+	<span>排序</span>
+</h3>
+<?php if($results){ ?>
+<div id="banner">
+			<div id="banner_left">
+               <div id="banner_right_right">
+               	 		<ul id="aa">
+			<li >
+   <foreach name='results' item='p'>  
+   <a href="__APP__/Home/Resume/index?r_id={$p.r_id}">
+        <div class="col-md-3">
+        <div class="ca-hover">
+          <div class="carousel-img">
+          </div>
+          <div class="carousel-avatar av1">
+          <img style="width:110px; height:110px; border-radius:50%; overflow:hidden;" class="av1" src="__PUBLIC__/images/{$p.r_img}" alt="">
+          </div>
+          <div class="carousel-content">
+            <h3>姓名:{$p.r_name}</h3>
+            <p>添加时间:{$p.r_addtime}</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        </div>
+        </a>    
+  </foreach>  
+		</li>
+		</ul>
+
+               </div>
+			</div>
+   </div>
+<?php }else{ ?>
+	<div style="width:1000;height:500px;">
+		
+	</div>
+<?php	}?>
+   <include file='Index:footer'/>

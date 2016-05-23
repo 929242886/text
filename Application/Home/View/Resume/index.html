@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>简历</title>
+<link href="__PUBLIC__/css/css1.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="__PUBLIC__/css/common.css"/><!-- 基本样式 -->
+<link rel="stylesheet" href="__PUBLIC__/css/animate.min.css"/> <!-- 动画效果 -->
+</head>
+
+<body style="background: #E6EBF5;" >
+
+<div style="margin-top: 20px;background: #8080FF;">
+<div class="example" style="margin-left: 300px;">
+   <a href="__APP__/Home/Index/index"><font size='6'>首页</font></a> 
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="__APP__/Home/Index/index"><font size='6'>返回</font></a>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+   
+   <?php
+        if(!empty($arr1)){
+            echo "<a href='javascript:;' class='rollIn dialog'><font size='6' >邀请</font></a>";
+            
+        }else{
+            echo "<a href='__URL__/Login/index'><font size='6' >邀请|请登录</font></a>";
+        }
+   ?>
+    
+        
+    
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <form action="__APP__/Home/Index/index">
+    <div style="margin-left:800px;">
+    <input type="text" name="sou" id=""/>
+    <input type="submit" value="搜索" />
+    </div>
+    </form>
+</div>
+
+</div>
+
+
+    
+        <div id="HBox">
+            <foreach name="arr1" item="v">
+            <form action="__CONTROLLER__/iphone" method="post" >
+                <ul class="list">
+                    <li>
+                        <strong>公司 <font color="#ff0000">*</font></strong>
+                        <div class="fl">{$v.e_name}</div>
+                        <input type="hidden" name="company" value="{$v.e_name}" />
+                        <input type="hidden" name="e_id" value="{$v.e_id}" />
+                        <input type="hidden" name="r_id" value="{$arr[0].r_id}" />
+                    </li>
+                    <li>
+                        <strong>号码 <font color="#ff0000">*</font></strong>
+                        <div class="fl">{$v.e_phone}</div>
+                        <input type="hidden" value="{$v.e_phone}" name="iphone" />
+                    </li>
+                    <li>
+                        <strong> 职位 <font color="#ff0000">*</font></strong>
+                        <div class="fl"><input type="text" name="nickname" value="" class="ipt nickname" /></div>
+                    </li>
+                    <li>
+                        <strong>薪资 <font color="#ff0000">*</font></strong>
+                        <div class="fl"><input type="text" name="money" value="" class="ipt email" /></div>
+                    </li>
+                    <li>
+                        <strong>待遇 <font color="#ff0000">*</font></strong>
+                        <div class="fl"><input type="text" name="daiyu" value="" class="ipt email1" /></div>
+                    </li>
+                    <li>
+                        <strong>时间 <font color="#ff0000">*</font></strong>
+                        <div class="fl"><input type="text" name="addtime" value="" class="ipt email1" /></div>
+                    </li>
+                    <li>
+                        <strong>地址 <font color="#ff0000">*</font></strong>
+                        <div class="fl">{$v.e_area}</div>
+                        <input type="hidden" value="{$v.e_area}" name="e_area" />
+                    </li>
+                    <input type="hidden" name="tel" value="{$arr[0].r_tel}" />
+                    <li><input type="submit" value="确认邀请此人" class="submitBtn" /></li>
+                </ul>
+            </form>
+            </foreach>
+        </div><!-- HBox end -->
+
+<div class="maindiv">
+
+<div class="divleft">
+<div style="margin-left: 10px;margin-top: 7px;">
+<foreach name="arr" item="v" >
+<img style="width:150px; height:150px; border-radius:50%; overflow:hidden;" src="__PUBLIC__/uploads/1.jpg" alt="正方形的原始图片" />
+
+</foreach>
+</div>
+</div>
+<div class="form-left-div"></div>
+<foreach name="arr" item="v" >
+<div class="form-center-div">
+  <ul>
+    <li>真实姓名: {$v.r_name} </li>
+    <li>出生年月: {$v.r_born} </li>
+    <li>性别：
+            <?php 
+                  if($v.r_sex==0){
+                    echo "男";
+                  }else{
+                    echo "女";
+                  }
+             ?>
+    </li>
+    <li>毕业学校: 北京八维研修学院 </li>
+    <li>移动电话: 
+        <?php
+        if(!empty($arr1)){
+            echo $v['r_tel'];
+            
+        }else{
+            echo "请登录后再查看！";
+        }
+   ?>
+     </li>
+    <li>电子邮件: 
+        <?php
+        if(!empty($arr1)){
+            echo $v['r_email'];
+            
+        }else{
+            echo "请登录后再查看！";
+        }
+   ?>
+     </li>
+    <li>家庭住址: {$v.r_address} </li>
+  </ul>
+<h2>求职意向:</h2>
+<p>寻一份{$v.p_name}工作</p>
+<h2>精通技能技能:</h2>
+<p>{$v.r_skill}</p>
+<h2>做过的项目：</h2>
+<p>{$v.r_project}</p>
+<h2>自我评价：</h2>
+<p>{$v.r_evaluate}</p>
+<h2>导师评价：</h2>
+<p>
+    <div id="box">
+           {$arr2[0].e_situation}       
+    </div>
+</p>
+        </div>
+</foreach>
+
+        
+
+<div class="form-right-div"></div>
+<div class="form-bottom-div"></div>
+</div>
+</body>
+</html>
+<script src="__PUBLIC__/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/js/jquery.hDialog.js"></script>
+<script>
+function show(){
+var box = document.getElementById("box");
+var text = box.innerHTML;
+var newBox = document.createElement("div");
+var btn = document.createElement("a");
+newBox.innerHTML = text.substring(0,100);
+btn.innerHTML = text.length > 50 ? "...显示全部..." : "";
+btn.href = "#";
+btn.onclick = function(){
+if (btn.innerHTML == "...显示全部..."){
+btn.innerHTML = "收起";
+newBox.innerHTML = text;
+}else{
+btn.innerHTML = "...显示全部...";
+newBox.innerHTML = text.substring(0,100);
+}
+}
+box.innerHTML = "";
+box.appendChild(newBox);
+box.appendChild(btn);
+}
+show();
+</script>
+<script>
+$(function(){
+    var $el = $('.dialog');
+    $el.hDialog();
+
+    
+
+    //提交并验证表单
+    $('.submitBtn').click(function() {
+        var $nickname = $('.nickname');
+        var $email = $('.email');
+        var $phone = $('.phone');
+        if($nickname.val() == ''){
+            $.tooltip('职位还没填呢...'); $nickname.focus();
+        }else if($phone.val() == ''){
+            $.tooltip('手机还没填呢...'); $phone.focus();
+        }else if($email.val() == ''){
+            $.tooltip('薪资还没填呢...'); $email.focus();
+        }else{
+            $.tooltip('提交成功，2秒后自动关闭',2000,true);
+            setTimeout(function(){
+                //$el.hDialog('close',{box:'#HBox'},'');  //也可以加跳转链接哦~
+                $el.hDialog('close',{box:'#HBox'});
+            },2000);
+        }
+    });
+
+
+});
+</script>
+<script>
+/*function search(){
+    var sou = document.getElementById('zhi').value;
+    $.ajax({
+
+     type: 'GET',
+
+     url: '__APP__/Home/Index/index' ,
+
+    data: 'sou='+sou ,
+
+    success: success ,
+
+    dataType: dataType
+
+});
+}*/
+</script>

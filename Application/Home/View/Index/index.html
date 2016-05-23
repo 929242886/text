@@ -1,0 +1,109 @@
+
+<include file='Index:top' />
+<include file='Index:keyword' />
+
+<div id="h1"><h1>项目经理<a href="__URL__/index?pid=1" id="gengs">更多..</a></h1>
+</div>
+<div id="banner">
+  <!--              <div id="banner_left_left" style="width:110px"><a href="" style="marign-left:300px">项目经理</a></div> -->
+			<div id="banner_left">
+               <div id="banner_right_right">
+               	 		<ul id="aa">
+			<li >
+   <foreach name='resumeoneall' item='p'>     
+   <a href="__APP__/Home/Resume/index?r_id={$p.r_id}">
+        <div class="col-md-3">
+        <div class="ca-hover">
+          <div class="carousel-img">
+          </div>
+          <div class="carousel-avatar av1">
+          <img style="width:110px; height:110px; border-radius:50%; overflow:hidden;" class="av1" src="__PUBLIC__/images/{$p.r_img}" alt="">
+          </div>
+          <div class="carousel-content">
+            <h3>姓名:{$p.r_name}</h3>
+            <p>添加时间:{$p.r_addtime}</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        </div>
+        </a> 
+  </foreach>  
+		</li>
+		</ul>
+
+        </div>
+			</div>
+</div>
+<div id="main">
+			<div id="main_left">
+             <div id="h1"><h1 >产品经理<a href="__URL__/index?pid=2" id="gengs">更多..</a></h1></div>
+               <div id="main_right_right">
+               	 		<ul id="aa">
+			<li >
+      <foreach name='resumetwoall' item='p'>      
+        <a href="__APP__/Home/Resume/index?r_id={$p.r_id}">    
+         <div class="col-md-3">
+        <div class="ca-hover">
+          <div class="carousel-img">
+          </div>
+          <div class="carousel-avatar av1">
+         
+          <img style="width:110px; height:110px; border-radius:50%; overflow:hidden;" class="av1" src="__PUBLIC__/images/{$p.r_img}" alt="">
+          
+          </div>
+          <div class="carousel-content">
+            <h3>姓名:{$p.r_name}</h3>
+            <p>添加时间:{$p.r_addtime}</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        </div>
+        </a>
+  </foreach>
+
+		</li>
+		</ul>
+               </div>
+               
+			</div>
+   </div>
+
+<div id="footers">
+			<div id="footers_left">
+               <div id="h1"><h1 >程序员<a href="__URL__/index?pid=3" id="gengs">更多..</a></h1></div>
+               <div id="footers_right_right">
+               	 		<ul id="aa">
+			<li >
+        <foreach name='resumethreeall' item='p'>  
+        <a href="__APP__/Home/Resume/index?r_id={$p.r_id}">     
+        <div class="col-md-3">
+        <div class="ca-hover">
+          <div class="carousel-img">
+          </div>
+          <div class="carousel-avatar av1">
+          <img style="width:110px; height:110px; border-radius:50%; overflow:hidden;" class="av1" src="__PUBLIC__/images/{$p.r_img}" alt="">
+          </div>
+          <div class="carousel-content">
+            <h3>姓名:{$p.r_name}</h3>
+            <p>添加时间:{$p.r_addtime}</p>
+          </div>
+          <div class="overlay"></div>
+        </div>
+        </div>
+        </a>
+  </foreach>
+
+		</li>
+		</ul>
+               </div>
+			</div>
+   </div>
+
+</ul>
+
+</div>	
+
+</div>
+
+
+<include file='Index:footer'/>

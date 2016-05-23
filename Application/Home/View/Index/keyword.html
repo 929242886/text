@@ -1,0 +1,40 @@
+<div id="container">
+
+<div class="clearfix">
+<div class="content_l" style="width:870px">
+
+<dl class="hc_tag" style="padding-left:94px">
+<dd >
+<dl>
+<dt>发展阶段：</dt>
+<dd>
+    <a href="__URL__/index" class="moren">不限</a>
+     <foreach name='positionall' item='p'>
+    <?php if(!empty($xz)){ ?>
+      <a href="__URL__/index?zw={$p.p_name}&xz={$xz}">{$p.p_name}</a>
+    <?php }else{ ?>
+      <a href="__URL__/index?zw={$p.p_name}">{$p.p_name}</a>
+    <?php } ?>
+   </foreach>
+</dd>
+</dl>
+<dl>
+<dt>期望薪资：</dt>
+<dd>
+<a href="__URL__/index" class="moren">不限</a>
+<foreach name='moneyall' item='m'>
+    <?php if(!empty($zw)){ ?>
+      <a href="__URL__/index?zw={$zw}&xz={$m.m_money}">{$m.m_money}</a>
+    <?php }else{ ?>
+      <a href="__URL__/index?xz={$m.m_money}">{$m.m_money}</a>
+    <?php } ?>
+   </foreach>
+</dd>
+</dl>
+</dd>
+<form action="__URL__/index" method="get">
+<div>
+  <input type="text" name="sou" id="keys" style="width:250px;height:25px;margin-left:47px;margin-top:5px;border:1px solid #0A8DD5;"><input type="submit" value="搜索" style="width:70px;height:30px;background:#0A8DD5;margin-left:5px;" id="searchkey">
+</div>
+</form>
+</dl>

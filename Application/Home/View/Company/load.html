@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery点击弹出确认窗口对话框 - 站长素材</title>
+
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/styles/css/alert.css" />
+<script type="text/javascript" src="__PUBLIC__/styles/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function($){
+
+	$(".btn1").click(function(event){
+		$(".hint").css({"display":"block"});
+		$(".box").css({"display":"block"});
+	});
+	
+	$(".hint-in3").click(function(event) {
+		$(".hint").css({"display":"none"});
+		$(".box").css({"display":"none"});
+	});
+
+	$(".btn2").click(function(event) {
+		$(".hintl").css({"display":"block"});
+		$(".box").css({"display":"block"});
+	});
+	
+	$(".hint3").click(function(event) {
+		$(this).parent().parent().css({"display":"none"});
+		$(".box").css({"display":"none"});
+	});
+	
+	
+});
+</script>
+
+</head>
+<body>
+
+<div class="box"></div>
+
+<button class="btn1">成功</button>
+
+<div class="hint">
+	<div class="hint-in1">
+		<div class="hint1"></div>
+		<div class="hint2">恭喜！保存成功</div>
+		<div class="hint3"></div>
+	</div>
+	<div class="hint-in2">你可以去首页查看。</div>
+	<div class="hint-in3">确定</div>
+</div>
+</body>
+</html>
