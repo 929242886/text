@@ -1,8 +1,13 @@
 <?php
   namespace Home\Controller;
   use Think\Controller;
-  class ResumeController extends PublicController{
+  class ResumeController extends Controller{
+  	/*
+  	*显示列表，分页，搜索，关键字标红，保留关键字
+  	*作者：李亚博
+  	*/
   		public function resume(){
+
   			$db = M('resume'); 
   			$where = 'r_id > 0';
 	        $keyword = $_GET['keyword'];
@@ -17,42 +22,71 @@
 	        $show       = $Page->show();// 分页显示输出
 	        // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 	        $list = $db->where($where)->order('r_id desc ')->limit($Page->firstRow.','.$Page->listRows)->select();
-	        // print_r($list);die;
 	        //关键字标红
 	        if(!empty($keyword)){
 	            foreach($list as $k=>$v){
 	               $list[$k]['r_name'] =  str_replace($keyword,"<font color='red'>".$keyword."</font>",$v['r_name']);
 	            }
 	        }
-	        $this->assign('count',$count);//总数
-	        $this->assign('keyword',$keyword);//保留关键字
-	        $this->assign('arr',$list);// 赋值数据集
-	        $this->assign('page',$show);// 赋值分页输出
-	        $this->display(); // 输出模板
-	  			// $this->display();
+	        $this->assign('count',$count);
+	        $this->assign('keyword',$keyword);
+	        $this->assign('arr',$list);
+	        $this->assign('page',$show);
+	        $this->display();
+	  		
   		}
 
-
+  		/*
+  		*五表联查，详情简历
+  		*作者：李亚博
+  		*/
   		public function details(){
-
-  			$r_id = $_GET['r_id'];
-  			$db = M('resume');
-  			$where = "SELECT * FROM qipin_resume left join qipin_education on qipin_resume.r_education = qipin_education.e_id left join qipin_money on qipin_resume.m_id = qipin_money.m_id left join qipin_position on qipin_resume.p_id = qipin_position.p_id left join qipin_experience on qipin_resume.eid = qipin_experience.e_id where r_id=$r_id";
-  			$arr = $db->query($where);
-	        $this->assign('arr',$arr);// 赋值分页输出
-	        $this->display(); // 输出模板
+			   $r_id = $_GET['r_id'];
+  			 $db = D('resume');
+  			 $arr=$db->details2($r_id);
+	       $this->assign('arr',$arr);
+	       $this->display();
 
   		}
 
+  		/*
+  		*删除，审核（通过、未通过）
+  		*作者：李亚博
+  		*/
   		public function delete(){
-  			$r_id = $_POST['r_id'];
-  			// print_r($r_id);die;
+  			 
+  			$r_id = $_POST['r_id']; 
   			$db = D('resume');
-  			$arr = $db->dele($r_id);
-  			if ($arr) {
-  				$this->success('删除成功',__CONTROLLER__.'/resume');
-  			}else{
-  				$this->error('删除失败');
+  			if ($_POST['submit']) {  
+
+  				$arr = $db->dele($r_id);
+	  			if ($arr) {
+	  				$this->success('删除成功',__CONTROLLER__.'/resume');
+	  			}else{
+	  				$this->error('删除失败');
+	  			} 
+	  			exit;
+
+  			}else if($_POST['examine']){ 
+
+  				$adopt = $db->adopt_examine($r_id);
+  				if ($adopt) {
+  					$this->success('您选择了通过',__CONTROLLER__.'/resume');
+  				}else{
+  					$this->error('通过失败，请重新选项');
+  				}
+  				exit;
+
+  			}else if($_POST['examine2']){ 
+
+  				$notthrough = $db->notthrough_examine($r_id);
+  				if ($notthrough) {
+  					$this->success('您选择了未通过',__CONTROLLER__.'/resume');
+  				}else{
+  					$this->error('未通过失败，请重新选项');
+  				}
+  				exit;
   			}
+  			
   		}
 }

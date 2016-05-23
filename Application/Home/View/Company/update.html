@@ -71,7 +71,7 @@ var youdao_conv_id = 271546;
         <dl class="c_section">
             
             <dd>
-            	            	<form method='post' action="__URL__/message">
+            	            	<form method='post' action="__URL__/update">
                                 <input type="hidden" name='e_id' value="{$row.e_id}">
             		<table class="savePassword">
             			<tbody>
@@ -81,10 +81,7 @@ var youdao_conv_id = 271546;
                             <td class="c7">{$row.e_phone}</td>
             					           				
             			</tr>
-                        <tr>
-                            <td><input type="hidden" id='phone' name='e_phone' value="{$row.e_phone}"></td>
-                            <td><input  type="text" style="width:110px">　　<input type="button" id='zphone' onClick="get_mobile_code();" value="获取验证码" style="height:50px"></td>
-                        </tr>
+                       
             			<tr>
             				<td class="label">新密码</td>
             				<td><input type="password" maxlength="16" id="e_pwd" name="e_pwd" style="background-image: url(images/img/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;"></td>

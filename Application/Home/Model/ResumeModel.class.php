@@ -52,4 +52,22 @@ class ResumeModel extends Model {
            public function aaa(){
             return 1;
            }
+		   //查看简历首页
+	public function sel($id){
+		$arr=$this->Table('qipin_resume')->join("left join qipin_user on qipin_resume.u_id=qipin_user.u_id")->join("left join qipin_position on qipin_resume.p_id=qipin_position.p_id")->join("left join qipin_money on qipin_resume.m_id=qipin_money.m_id")->join("left join qipin_experience on qipin_resume.eid=qipin_experience.ex_id")->join("left join qipin_education on qipin_resume.r_education=qipin_education.ed_id")->where("qipin_resume.u_id=$id")->find();
+		return $arr;
+	}
+	//修改简历
+	public function up($data,$u_id){
+		// print_r($data);die;
+		$re=$this->where("u_id=".$u_id)->save($data);
+		return $re;
+	}
+	//添加简历
+	public function adds($data){
+		// print_r($data);die;
+		// $re=$this->data($data)->add();
+		$re=$this->add($data);
+		return $re;
+	}
 }

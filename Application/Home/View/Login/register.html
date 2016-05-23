@@ -72,30 +72,42 @@ $('#s2').html('');
 });
 $(document).ready(function(){  
         $(":submit[id=commit]").click(function(check){  
+<<<<<<< HEAD
             //手机号码为空或格式不正确不能提交
             var val = $(":text[id=e_phone]").val(); 
             var a=/^1[3|4|5|8]\d{9}$/;  
+ 
+>>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
             if(val==""){   
                 $('#s1').html("<font color='red'>手机号不能为空</font>");
                 $(":text[id=e_phone]").focus();  
                 check.preventDefault();//此处阻止提交表单  
+<<<<<<< HEAD
             }else if(!a.test(val)) {
                 $('#s1').html('手机号格式不正确');
                 check.preventDefault();
             }
             //密码为空不能提交
+=======
+            } 
+>>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
             var vals = $(":password[id=e_pwd]").val();     
                if(vals==""){   
                 $('#s2').html("<font color='red'>密码不能为空</font>");
                 $(":text[id=e_pwd]").focus();  
                 check.preventDefault();//此处阻止提交表单  
+<<<<<<< HEAD
             }
                   
+=======
+            }      
+>>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
         });  
     });  
 });
 </script>
 <script language="javascript">
+<<<<<<< HEAD
   $(document).on('click','#stu',function(){
         var $that = $(this);
         $("#nostu").css("background",'none');
@@ -125,6 +137,28 @@ $(document).ready(function(){
                     $('#verity_num').css('display','none');
                 }
             });
+=======
+ function get_mobile_code(){
+        function get_mobile_code(){
+        $.post('sms.php', {mobile:jQuery.trim($('#e_phone').val()),send_code:<?php echo $_SESSION['send_code'];?>}, function(msg) {
+            alert(jQuery.trim(unescape(msg)));
+      if(msg=='提交成功'){
+        RemainTime();
+      }
+        });
+  };
+  var iTime = 59;
+  var Account;
+  function RemainTime(){
+    document.getElementById('zphone').disabled = true;
+    var iSecond,sSecond="",sTime="";
+    if (iTime >= 0){
+      iSecond = parseInt(iTime%60);
+      iMinute = parseInt(iTime/60)
+      if (iSecond >= 0){
+        if(iMinute>0){
+          sSecond = iMinute + "分" + iSecond + "秒";
+>>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
         }else{
             $('#ver').css('display','none');
             $('#verity_num').css('display','none');

@@ -36,7 +36,7 @@ var youdao_conv_id = 271546;
 <div id="body">
     <div id="header">
         <div class="wrapper">
-            <a class="logo" href="h/">
+            <a class="logo" href="__APP__">
                 <img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="__PUBLIC__/images/logo.png">
             </a>
             <ul id="navheader" class="reset">
@@ -60,7 +60,7 @@ var youdao_conv_id = 271546;
     <div id="container">
             <div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-                <dt><h3>个人中心>我的账号</h3></dt>
+                <dt><h3><h4><font color='#6666ff'><a href="__APP__">首页</a>>个人中心>我的账号</font></h4></h3></dt>
                 <dd><a href="index">我的账号</a></dd>
         <dd><a href="invite">已邀请人才</a></dd>
         <dd><a href="update">修改密码</a></dd>
@@ -238,6 +238,23 @@ var youdao_conv_id = 271546;
            $('#s5').html(""); 
         }
      });
+<<<<<<< HEAD
+=======
+	 //邮箱格式不正确不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var a=/^\w+@\w+\.(com|cn|net)$/; 
+           if(!a.test(e_email)){
+             $('#s5').html("<font color='red'>邮箱格式不正确</font>");
+             $(":password[id=e_email]").focus();  
+             check.preventDefault();//此处阻止提交表单 
+           }else{
+             $('#s5').html('');
+           }            
+        });  
+    });
+
+>>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
      //规模为空不能提交
     $(document).ready(function(){  
         $(":submit[id=tijiao]").click(function(check){  

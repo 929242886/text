@@ -137,7 +137,7 @@ class CompanyController extends Controller {
         $this->assign('row',$row);
         $this->display('update');
         }else{
-    	$this->error('您未登录',U('Login/index'));
+    	$this->error('您未登录',U('Login/index'),0);
     }
     }
     /**
