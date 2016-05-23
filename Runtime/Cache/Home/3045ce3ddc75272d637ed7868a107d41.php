@@ -1,67 +1,31 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8" />
-<title>企聘王</title>
+<title>学生简历</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<!-- basic styles -->
-<link href="__PUBLIC__/css/bootstrap.min.css" rel="stylesheet" />
-<link rel="stylesheet" href="__PUBLIC__/css/font-awesome.min.css" />
+<style type="text/css">
+        body {
+            padding-bottom: 40px;
+        }
+        .sidebar-nav {
+            padding: 9px 0;
+        }
 
-<!--[if IE 7]>
-  <link rel="stylesheet" href="__PUBLIC__/css/font-awesome-ie7.min.css" />
-<![endif]-->
+        @media (max-width: 980px) {
+            /* Enable use of floated navbar text */
+            .navbar-text.pull-right {
+                float: none;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
 
-<!-- page specific plugin styles -->
 
-<!-- fonts -->
-
-<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300" />
-
-<!-- ace styles -->
-
-<link rel="stylesheet" href="__PUBLIC__/css/ace.min.css" />
-<link rel="stylesheet" href="__PUBLIC__/css/ace-rtl.min.css" />
-<link rel="stylesheet" href="__PUBLIC__/css/ace-skins.min.css" />
-
-<!--[if lte IE 8]>
-  <link rel="stylesheet" href="__PUBLIC__/css/ace-ie.min.css" />
-<![endif]-->
-
-<!-- inline styles related to this page -->
-
-<!-- ace settings handler -->
-
-<script src="__PUBLIC__/js/ace-extra.min.js"></script>
-
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-<!--[if lt IE 9]>
-<script src="__PUBLIC__/js/html5shiv.js"></script>
-<script src="__PUBLIC__/js/respond.min.js"></script>
-<![endif]-->
+    </style>
 </head>
 
 <body>
-<script type="text/javascript" src="__PUBLIC__/js/SysUtil.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
-		<input type="hidden" value="<?php echo $_GET['success']?>" id = 'aa'/>
-		<input type="hidden" value="<?php echo $_GET['messign']?>" id = 'bb'/>
-<script>
-
-		$(function(){
-				var hh = document.getElementById('aa').value;
-				var bb = document.getElementById('bb').value;
-		//alert(hh);
-				if(hh == 'success')
-				{
-					//alert(1);
-					SysUtil.Tip.success(bb);
-				}else if(hh == 'error'){
-				SysUtil.Tip.error('这是失败消息');
-			}
-		});
-</script>
 <div class="navbar navbar-default" id="navbar">
 	<script type="text/javascript">
 		try{ace.settings.check('navbar' , 'fixed')}catch(e){}
@@ -77,8 +41,81 @@
 			</a><!-- /.brand -->
 		</div><!-- /.navbar-header -->
 
+		<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title>Document</title>
+	<!-- basic styles -->
+<link href="/pinpinwang/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/font-awesome.min.css" />
+
+<!--[if IE 7]>
+  <link rel="stylesheet" href="/pinpinwang/Public/css/font-awesome-ie7.min.css" />
+<![endif]-->
+
+<!-- page specific plugin styles -->
+
+<!-- fonts -->
+
+<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300" />
+
+<!-- ace styles -->
+
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace-skins.min.css" />
+
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="/pinpinwang/Public/css/ace-ie.min.css" />
+<![endif]-->
+
+<!-- inline styles related to this page -->
+
+<!-- ace settings handler -->
+
+<script src="/pinpinwang/Public/js/ace-extra.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+<script src="/pinpinwang/Public/js/html5shiv.js"></script>
+<script src="/pinpinwang/Public/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<div class="navbar-header pull-right" role="navigation">
+			<ul class="nav ace-nav">
+
+
+				<li class="light-blue">
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle">
+						<img class="nav-user-photo" src="/pinpinwang/Public/avatars/user.jpg" alt="Jason's Photo" />
+						<span class="user-info">
+							<small>欢迎光临,</small>
+							ADMIN
+						</span>
+
+						<i class="icon-caret-down"></i>
+					</a>
+
+					<ul class="user-menu pull-right dropdown-menu dropdown-yellow dropdown-caret dropdown-close">
+						
+
+
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Login/logout">
+								<i class="icon-off"></i>
+								退出
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul><!-- /.ace-nav -->
+		</div><!-- /.navbar-header -->
 		
-		<include file="common:top"/> 
+</body>
+</html> 
 	</div><!-- /.container -->
 </div>
 
@@ -110,9 +147,135 @@
 				</div>
 			</div><!-- #sidebar-shortcuts -->
 
-			<include file="common:left"/> 
+			<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<title></title>
+	<link href="/pinpinwang/Public/css/bootstrap.min.css" rel="stylesheet" />
+ <!-- basic styles -->
+<link href="/pinpinwang/Public/css/bootstrap.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/font-awesome.min.css" />
 
-			
+<!--[if IE 7]>
+  <link rel="stylesheet" href="/pinpinwang/Public/css/font-awesome-ie7.min.css" />
+<![endif]-->
+
+<!-- page specific plugin styles -->
+
+<!-- fonts -->
+
+<link rel="stylesheet" href="http://fonts.useso.com/css?family=Open+Sans:400,300" />
+
+<!-- ace styles -->
+
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace.min.css" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace-rtl.min.css" />
+<link rel="stylesheet" href="/pinpinwang/Public/css/ace-skins.min.css" />
+
+<!--[if lte IE 8]>
+  <link rel="stylesheet" href="/pinpinwang/Public/css/ace-ie.min.css" />
+<![endif]-->
+
+<!-- inline styles related to this page -->
+
+<!-- ace settings handler -->
+
+<script src="/pinpinwang/Public/js/ace-extra.min.js"></script>
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+<!--[if lt IE 9]>
+<script src="/pinpinwang/Public/js/html5shiv.js"></script>
+<script src="/pinpinwang/Public/js/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+	<ul class="nav nav-list">
+				<li class="active">
+					<a href="index.html">
+						<i class="icon-dashboard"></i>
+						<span class="menu-text"> 招聘控制台 </span>
+					</a>
+				</li>
+	<li>
+					<a href="#" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 企业管理 </span>
+
+						<b class="arrow icon-angle-down"></b>
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Enterprise/index">
+								<i class="icon-double-angle-right"></i>
+								企业
+							</a>
+						</li> 
+
+					</ul>
+				</li>  
+				<li>
+					<a href="#" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 简历管理 </span>
+
+						<b class="arrow icon-angle-down"></b>
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Condition/../resume/resume">
+								<i class="icon-double-angle-right"></i>
+								学生简历
+							</a>
+						</li> 
+
+					</ul>
+				</li>  
+
+				<li>
+					<a href="#" class="dropdown-toggle">
+						<i class="icon-desktop"></i>
+						<span class="menu-text"> 条件搜索管理 </span>
+
+						<b class="arrow icon-angle-down"></b>
+					</a>
+
+					<ul class="submenu">
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Condition/../condition/position">
+								<i class="icon-double-angle-right"></i>
+								职位
+							</a>
+						</li> 
+
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Condition/../condition/experience">
+								<i class="icon-double-angle-right"></i>
+								经验
+							</a>
+						</li> 
+
+						<li>
+							<a href="/pinpinwang/admin.php/Home/Condition/../condition/salary">
+								<i class="icon-double-angle-right"></i>
+								薪资
+							</a>
+						</li> 
+
+					
+					 
+				</li>  
+				</ul>
+			</ul><!-- /.nav-list -->
+
+			<div class="sidebar-collapse" id="sidebar-collapse">
+				<i class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right"></i>
+			</div>
+</body>
+</html> 
 
 			<script type="text/javascript">
 				try{ace.settings.check('sidebar' , 'collapsed')}catch(e){}
@@ -130,17 +293,17 @@
 						<i class="icon-home home-icon"></i>
 						<a href="#">首页</a>
 					</li>
-					<li class="active">企聘王控制台</li>
+					<li class="active">职位控制台</li>
 				</ul><!-- .breadcrumb -->
 			</div>
 
 			<div class="page-content">
 				<div class="page-header">
 					<h1>
-						企聘王控制台
+						职位控制台
 						<small>
 							<i class="icon-double-angle-right"></i>
-							 查看<?php echo $re['a'];?>
+							 查看
 						</small>
 					</h1>
 				</div><!-- /.page-header -->
@@ -149,77 +312,44 @@
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
 
-	<form class="form-inline definewidth m20" action="__CONTROLLER__/index" method="get">
-    企业名称：
-    <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="{$keyword}">&nbsp;&nbsp;
+<form class="form-inline definewidth m20" action="/pinpinwang/admin.php/Home/Condition/experience" method="get">
+    经验名称：
+    <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="<?php echo ($keyword); ?>">&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">查询</button>
 </form>
 
- 	<?php if($arr){ ?>
- 	<form action="__CONTROLLER__/delete" method="post">
+ 	 
+ 	<form action="/pinpinwang/admin.php/Home/Condition/experience_delete" method="get">
 	<table class="table table-bordered table-hover definewidth m10" >
-	    <thead>
-
-	    <tr>
-	        <th>多选</th>
-	        <th>公司名称</th>
-	        <th>公司电话</th>
-	        <th>法人代表</th> 
-	        <th>营业执照</th> 
-	        <th>详细地址</th> 
-	        <th>规模</th> 
-	        <th>公司邮箱</th> 
-	        <th>添加时间</th>
-	        <th>状态</th>
-	    </tr>
-	    </thead>
-	<?php foreach ($arr as $key => $value): ?>
+		    <thead> 
+		    <tr>
+		        <th>多选</th>
+		        <th>id</th>
+		        <th>姓名</th>  
+		    </tr>
+		    </thead>
+	 
 		
-	
+	<?php foreach ($arr as $key => $value): ?> 
 	    <tr>
-	    <td><input type="checkbox" name="e_id[]" id="e_id[]" value="<?php echo $value['e_id']?>"></td>
-	      <td><?php echo $value['e_name']?></td>
-	      <td><?php echo $value['e_phone']?></td>
-	      <td><?php echo $value['e_legal']?></td>
-	      <td>
-                <img src="__PUBLIC__/<?php echo $value['e_photo']?>" alt="">
-	      </td>
-	      <td><?php echo $value['e_area']?></td>
-	      <td><?php echo $value['e_size']?></td>
-	      <td><?php echo $value['e_email']?></td>
-	      <td><?php echo $value['e_addtime']?></td>
-	      <td>
-	      	<?php if ($value['e_status']==0) { ?>
-                 <a href="__CONTROLLER__/status/e_id/<?php echo $value['e_id']?>">审核</a>
-	      	<?php }else{ ?>
-			     <b>已审核</b>
-	      		<?php } ?>
-	      </td>
-	    </tr>
-<?php endforeach ?>
-    </table>
-    <input type="submit" name="submit" id="submit" value="批量删除" onclick="if(confirm('确定删除？')){}else{return false;};">
+	    <td><input type="checkbox" name="ex_id[]" id="ex_id[]" value="<?php echo $value['ex_id']?>"></td>
+	        <td><?php echo $value['ex_id']?></td> 
+	        <td><?php echo $value['e_year']?></td>  
+	     </tr>
+	<?php endforeach ?>
+    </table>  
+    <button type="submit" class="btn btn-success" id="submit" name="submit" value="批量删除" onclick="if(confirm('确定删除？')){}else{return false;};">批量删除</button>
+    <button type="submit" class="btn btn-success" id="update" name="update" value="批量修改" onclick="if(confirm('确定修改？')){}else{return false;};">批量修改</button>
+    <button type="submit" class="btn btn-success" id="add" name="add" value="添加">添加</button>
     </form>
 
-    <div>{$page}共{$count}条数据</div>
-    <?php }else{
-	echo "<table class=\"table table-bordered table-hover definewidth m10\" >
-	    <thead>
+    <div><div><?php echo ($page); ?>共<?php echo ($count); ?>条数据</div></div>
+ 
 
-	    <tr>
-	        <th>姓名</th>
-	        <th>性别</th>
-	        <th>年龄</th> 
-	        <th>毕业学校</th> 
-	        <th>做过项目</th> 
-	        <th>家庭住址</th> 
-	        <th>自我评价</th> 
-	        <th>编辑</th> 
-	    </tr>
-	    </thead>
-</table>";
-	echo '<center>'."<span style='color:red;'>你搜索的是".$keyword."暂无数据</span>".'</center>';
-	}?><br />
+
+
+
+
 						<!-- PAGE CONTENT ENDS -->
 					</div><!-- /.col -->
 				</div><!-- /.row -->
@@ -284,7 +414,7 @@
 
 <!--[if !IE]> -->
 
-<script src="__PUBLIC__/js/jquery.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery.min.js"></script>
 
 <!-- <![endif]-->
 
@@ -295,48 +425,46 @@
 <!--[if !IE]> -->
 
 <script type="text/javascript">
-	window.jQuery || document.write("<script src='__PUBLIC__/js/jquery-2.0.3.min.js'>"+"<"+"script>");
+	window.jQuery || document.write("<script src='/pinpinwang/Public/js/jquery-2.0.3.min.js'>"+"<"+"script>");
 </script>
 
 <!-- <![endif]-->
 
 <!--[if IE]>
 <script type="text/javascript">
-window.jQuery || document.write("<script src='__PUBLIC__/js/jquery-1.10.2.min.js'>"+"<"+"script>");
+window.jQuery || document.write("<script src='/pinpinwang/Public/js/jquery-1.10.2.min.js'>"+"<"+"script>");
 </script>
 <![endif]-->
 
 <script type="text/javascript">
-	if("ontouchend" in document) document.write("<script src='__PUBLIC__/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
+	if("ontouchend" in document) document.write("<script src='/pinpinwang/Public/js/jquery.mobile.custom.min.js'>"+"<"+"script>");
 </script>
-<script src="__PUBLIC__/js/bootstrap.min.js"></script>
-<script src="__PUBLIC__/js/typeahead-bs2.min.js"></script>
+<script src="/pinpinwang/Public/js/bootstrap.min.js"></script>
+<script src="/pinpinwang/Public/js/typeahead-bs2.min.js"></script>
 
 <!-- page specific plugin scripts -->
 
 <!--[if lte IE 8]>
-  <script src="__PUBLIC__/js/excanvas.min.js"></script>
+  <script src="/pinpinwang/Public/js/excanvas.min.js"></script>
 <![endif]-->
 
-<script src="__PUBLIC__/js/jquery-ui-1.10.3.custom.min.js"></script>
-<script src="__PUBLIC__/js/jquery.ui.touch-punch.min.js"></script>
-<script src="__PUBLIC__/js/jquery.slimscroll.min.js"></script>
-<script src="__PUBLIC__/js/jquery.easy-pie-chart.min.js"></script>
-<script src="__PUBLIC__/js/jquery.sparkline.min.js"></script>
-<script src="__PUBLIC__/js/flot/jquery.flot.min.js"></script>
-<script src="__PUBLIC__/js/flot/jquery.flot.pie.min.js"></script>
-<script src="__PUBLIC__/js/flot/jquery.flot.resize.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery-ui-1.10.3.custom.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery.ui.touch-punch.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery.slimscroll.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery.easy-pie-chart.min.js"></script>
+<script src="/pinpinwang/Public/js/jquery.sparkline.min.js"></script>
+<script src="/pinpinwang/Public/js/flot/jquery.flot.min.js"></script>
+<script src="/pinpinwang/Public/js/flot/jquery.flot.pie.min.js"></script>
+<script src="/pinpinwang/Public/js/flot/jquery.flot.resize.min.js"></script>
 
 <!-- ace scripts -->
 
-<script src="__PUBLIC__/js/ace-elements.min.js"></script>
-<script src="__PUBLIC__/js/ace.min.js"></script>
+<script src="/pinpinwang/Public/js/ace-elements.min.js"></script>
+<script src="/pinpinwang/Public/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
-<script type="text/javascript" src="__PUBLIC__/js/SysUtil.js"></script>
-		<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
-<script type="text/javascript">
 
+<script type="text/javascript">
 	jQuery(function($) {
 		$('.easy-pie-chart.percentage').each(function(){
 			var $box = $(this).closest('.infobox');
@@ -517,9 +645,7 @@ window.jQuery || document.write("<script src='__PUBLIC__/js/jquery-1.10.2.min.js
 			placeholder: 'draggable-placeholder',
 			forcePlaceholderSize:true,
 			tolerance:'pointer',
-			stop: function( event, ui ) {//just for Chrome!!!! so that dropdowns on items don't appear below other items after being moved
-				$(ui.item).css('z-index', 'auto');
-			}
+			stop: function( event, ui ) 
 			}
 		);
 		$('#tasks').disableSelection();
@@ -532,6 +658,29 @@ window.jQuery || document.write("<script src='__PUBLIC__/js/jquery-1.10.2.min.js
 	})
 </script>
 
+<script>
+	$('#submit').click(function(){
+		text = $("input:checkbox[name='ex_id[]']:checked").map(function(index,elem) {
+			return $(elem).val();
+		}).get().join(',');
+		if (text=='') {
+			alert('请选择删除内容')
+			return false
+		}
+		
+	})
+
+	 $('#update').click(function(){
+		text = $("input:checkbox[name='update[]']:checked").map(function(index,elem) {
+			return $(elem).val();
+		}).get().join(',');
+		if (text=='') {
+			alert('请选择修改内容')
+			return false
+		}
+		
+	})
+</script>
+
 </body>
 </html>
-

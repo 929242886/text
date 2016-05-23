@@ -1,7 +1,7 @@
 <?php
   namespace Home\Controller;
   use Think\Controller;
-  class ConditionController extends PublicController{
+  class ConditionController extends Controller{
     /*
     *职位列表（分页、搜索、关键字标红、保留关键字）
     *作者：李亚博
@@ -14,7 +14,7 @@
 	        if(!empty($keyword)) 
 	        $where = " p_name like '%$keyword%'"; 
 	        $count      = $db->where($where)->count();// 查询满足要求的总记录数
-	        $Page       = new \Think\Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
+	        $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
 	        $Page->setConfig('first','第一页');
 	        $Page->setConfig('prev','上一页');
 	        $Page->setConfig('next','下一页');
@@ -116,7 +116,7 @@
 	        if(!empty($keyword)) 
 	        $where = " e_year like '%$keyword%'"; 
 	        $count      = $db->where($where)->count();// 查询满足要求的总记录数
-	        $Page       = new \Think\Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
+	        $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
 	        $Page->setConfig('first','第一页');
 	        $Page->setConfig('prev','上一页');
 	        $Page->setConfig('next','下一页');
@@ -227,7 +227,7 @@
           if(!empty($keyword)) 
           $where = " m_money like '%$keyword%'"; 
           $count      = $db->where($where)->count();// 查询满足要求的总记录数
-          $Page       = new \Think\Page($count,2);// 实例化分页类 传入总记录数和每页显示的记录数
+          $Page       = new \Think\Page($count,5);// 实例化分页类 传入总记录数和每页显示的记录数
           $Page->setConfig('first','第一页');
           $Page->setConfig('prev','上一页');
           $Page->setConfig('next','下一页');
