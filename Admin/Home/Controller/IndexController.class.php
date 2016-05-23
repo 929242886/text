@@ -29,7 +29,7 @@
 				 //开启session
 				 session_start();
 				 session('admin_name',$name);
-				 session('admin_id',$row['admin_id']);
+				 session('admin_id',$row['a_id']);
 				 $data=D('Adminuser');
     			 $arr=$data->show();
     			 foreach ($arr as $k => $v) {
