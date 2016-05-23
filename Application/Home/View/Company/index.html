@@ -20,6 +20,9 @@ console.log(1);
 <link href="__PUBLIC__/style/css/style.css" type="text/css" rel="stylesheet">
 <link href="__PUBLIC__/style/css/external.min.css" type="text/css" rel="stylesheet">
 <link href="__PUBLIC__/style/css/popup.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/style/css/styles.css" />
+<script type="text/javascript" src="__PUBLIC__/style/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/style/js/custom.js"></script>
 <script type="text/javascript" src="__PUBLIC__/style/js/jquery.1.10.1.min.js"></script>
 <script src="__PUBLIC__/style/js/jquery.lib.min.js" type="text/javascript"></script>
 <script type="text/javascript" src="__PUBLIC__/style/js/ajaxfileupload.js"></script>
@@ -36,7 +39,7 @@ var youdao_conv_id = 271546;
 <div id="body">
     <div id="header">
         <div class="wrapper">
-            <a class="logo" href="__APP__">
+            <a class="logo" href="h/">
                 <img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="__PUBLIC__/images/logo.png">
             </a>
             <ul id="navheader" class="reset">
@@ -60,17 +63,35 @@ var youdao_conv_id = 271546;
     <div id="container">
             <div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-                <dt><h3><h4><font color='#6666ff'><a href="__APP__">首页</a>>个人中心>我的账号</font></h4></h3></dt>
+                <dt style="margin-left:3px"><h4><font color='#999999'><a href="__APP__"><font color='#999999'>首页</font></a>>个人中心>我的账号</font></h4></dt>
                 <dd><a href="index">我的账号</a></dd>
         <dd><a href="invite">已邀请人才</a></dd>
         <dd><a href="update">修改密码</a></dd>
             </dl>
+            <div id='tui' style="display:block">
+             <h4 style="margin-left:3px"><span ><font color='#999999'>今日为您推荐</font><font id='close' style="cursor:pointer;float:right" onclick="closes();"><img src="__PUBLIC__/images/error-blue.png" style="margin-left:105px" width='20px' height='20px' alt=""></font></span></h4>
+             <div>
+                 <?php foreach($res as $k=>$v){ ?>
+                <p style="margin-left:3px"> <a href="Resume/index?r_id={$v.r_id}">{$v.r_name}</a>　
+                 <span>期望薪资：{$v.money}</span> </p>
+                 <?php } ?>
+             </div>
+            </div>
+            <script>
+            function closes()
+            {
+                document.getElementById('tui').style.display='none';
+            }
+            </script>
+
 </div>
 <input type="hidden" id="hasSidebar" value="1"> 
 <div class="content user_modifyContent">
         <dl class="c_section">
             
             <dd>
+
+
                                 <form action="__URL__/index" method='post' enctype="multipart/form-data">
                                 <input type="hidden" name="e_id" value="{$data.e_id}">
                     <table class="savePassword">
@@ -215,18 +236,23 @@ var youdao_conv_id = 271546;
           $('#s3').html("<font color='red'>法人代表不能为空</font>");  
         }else{
            $('#s3').html(""); 
-        }
-     });
+       }
+     }); 
   
      //企业邮箱为空不能提交
     $(document).ready(function(){  
         $(":submit[id=tijiao]").click(function(check){  
-            var val = $(":text[id=e_email]").val();  
+            var val = $(":text[id=e_email]").val(); 
+            var a=/^\w+@\w+\.(com|cn|net)$/;  
             if(val==""){   
                 $('#s5').html("<font color='red'>企业邮箱不能为空</font>");
                 $(":text[id=e_email]").focus();  
                 check.preventDefault();//此处阻止提交表单  
-            }             
+            }else if(!a.test(val)){
+                $('#s5').html("<font color='red'>邮箱格式不正确</font>");
+                $(":text[id=e_email]").focus();  
+                check.preventDefault();//此处阻止提交表单
+            }
         });  
     });    
      $('#e_email').blur(function(){
@@ -237,24 +263,19 @@ var youdao_conv_id = 271546;
         }else{
            $('#s5').html(""); 
         }
-     });
-<<<<<<< HEAD
-=======
+
 	 //邮箱格式不正确不能提交
     $(document).ready(function(){  
         $(":submit[id=tijiao]").click(function(check){  
             var a=/^\w+@\w+\.(com|cn|net)$/; 
            if(!a.test(e_email)){
              $('#s5').html("<font color='red'>邮箱格式不正确</font>");
-             $(":password[id=e_email]").focus();  
-             check.preventDefault();//此处阻止提交表单 
            }else{
              $('#s5').html('');
-           }            
-        });  
-    });
-
->>>>>>> f79095c8ec264618e42d2ad2d9294abc028f68b4
+           }
+        }
+     });
+   
      //规模为空不能提交
     $(document).ready(function(){  
         $(":submit[id=tijiao]").click(function(check){  
@@ -280,7 +301,7 @@ var youdao_conv_id = 271546;
         $(":submit[id=tijiao]").click(function(check){  
             var val = $(":text[id=e_area]").val();  
             if(val==""){   
-                $('#s7').html("<font color='red'>规模不能为空</font>");
+                $('#s7').html("<font color='red'>公司地址不能为空</font>");
                 $(":text[id=e_area]").focus();  
                 check.preventDefault();//此处阻止提交表单  
             }             
@@ -290,7 +311,7 @@ var youdao_conv_id = 271546;
         var e_area=$('#e_area').val();
         if(e_area=='')
         {
-          $('#s7').html("<font color='red'>规模不能为空</font>");  
+          $('#s7').html("<font color='red'>公司地址不能为空</font>");  
         }else{
            $('#s7').html(""); 
         }
@@ -356,6 +377,10 @@ var youdao_conv_id = 271546;
    
     <!--【已有帐号时候】 帐号绑定 : 绑定时发现需要需要绑定的帐号已经存在信息，需要选择保留一个帐号下信息，另一个帐号下信息被覆盖  --> 
     <div style="overflow:hidden; width:500px;height:390px;" class="popup" id="bindReplace">
+
+
+
+
         <form style="width: 100%" id="bindReplaceForm">
             <table width="100%" height="100%">
                 <tbody><tr>
@@ -466,7 +491,6 @@ var youdao_conv_id = 271546;
             <a rel="nofollow" title="回到顶部" id="backtop"></a>
         </div><!-- end #container -->
     </div><!-- end #body -->
-  
 
 <script src="js/core.min.js" type="text/javascript"></script>
 <script src="js/popup.min.js" type="text/javascript"></script>
