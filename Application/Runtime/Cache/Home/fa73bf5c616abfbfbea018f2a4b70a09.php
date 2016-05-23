@@ -1,58 +1,43 @@
-<!DOCTYPE HTML>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
 <html xmlns:wb="http://open.weibo.com/wb"><head>
-</script><script type="text/javascript" async="" src="__PUBLIC__/js/conversion.js"></script><script src="__PUBLIC__/js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
+</script><script type="text/javascript" async="" src="js/conversion.js"></script><script src="js/allmobilize.min.js" charset="utf-8" id="allmobilize"></script><style type="text/css"></style>
 <meta content="no-siteapp" http-equiv="Cache-Control">
 <link  media="handheld" rel="alternate">
 <!-- end 云适配 -->
 <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-<title>用户中心</title>
+<title>修改密码-拉勾网-最专业的互联网招聘平台</title>
 <meta content="23635710066417756375" property="qc:admins">
 <meta name="description" content="拉勾网是3W旗下的互联网领域垂直招聘网站,互联网职业机会尽在拉勾网">
 <meta name="keywords" content="拉勾,拉勾网,拉勾招聘,拉钩, 拉钩网 ,互联网招聘,拉勾互联网招聘, 移动互联网招聘, 垂直互联网招聘, 微信招聘, 微博招聘, 拉勾官网, 拉勾百科,跳槽, 高薪职位, 互联网圈子, IT招聘, 职场招聘, 猎头招聘,O2O招聘, LBS招聘, 社交招聘, 校园招聘, 校招,社会招聘,社招">
 <meta content="QIQ6KC1oZ6" name="baidu-site-verification">
-<style>
-	#footer{
-		margin-top: 1150px;
-	}
-	.aa{
-		width: 80px;
-		height: 30px;
-	}
-	#img{
-		margin-left: 550px;
-		margin-top: 50px;
-		z-index: 1000;
-		position: absolute;
-	}
-	
-</style>
+
 <!-- <div class="web_root"  style="display:none">h</div> -->
 <script type="text/javascript">
 var ctx = "h";
 console.log(1);
 </script>
 <link href="h/images/favicon.ico" rel="Shortcut Icon">
-<link href="__PUBLIC__/css/style.css" type="text/css" rel="stylesheet">
-<link href="__PUBLIC__/css/external.min.css" type="text/css" rel="stylesheet">
-<link href="__PUBLIC__/css/popup.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="__PUBLIC__/js/jquery.1.10.1.min.js"></script>
-<script src="__PUBLIC__/js/jquery.lib.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="__PUBLIC__/js/ajaxfileupload.js"></script>
-<script src="__PUBLIC__/js/additional-methods.js" type="text/javascript"></script>
+<link href="/text/Public/style/css/style.css" type="text/css" rel="stylesheet">
+<link href="/text/Public/style/css/external.min.css" type="text/css" rel="stylesheet">
+<link href="/text/Public/style/css/popup.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="/text/Public/style/js/jquery.1.10.1.min.js"></script>
+<script src="/text/Public/style/js/jquery.lib.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/text/Public/style/js/ajaxfileupload.js"></script>
+<script src="/text/Public/style/js/additional-methods.js" type="text/javascript"></script>
 <!--[if lte IE 8]>
-    <script type="text/javascript" src="__PUBLIC__/js/excanvas.js"></script>
+    <script type="text/javascript" src="js/excanvas.js"></script>
 <![endif]-->
 <script type="text/javascript">
 var youdao_conv_id = 271546; 
 </script> 
-<script src="__PUBLIC__/js/conv.js" type="text/javascript"></script>
-<script src="__PUBLIC__/js/ajaxCross.json" charset="UTF-8"></script></head>
+<script src="js/conv.js" type="text/javascript"></script>
+<script src="js/ajaxCross.json" charset="UTF-8"></script></head>
 <body>
 <div id="body">
 	<div id="header">
     	<div class="wrapper">
     		<a class="logo" href="h/">
-    			<img width="229" height="43" alt="拉勾招聘-专注互联网招聘" src="images/logo.png">
+    			<img width="229" height="60" alt="拉勾招聘-专注互联网招聘" src="/text/Public/images/logo.png">
     		</a>
     		<ul id="navheader" class="reset">
     			<li><a href="index.html">轻轻松松找人才</a></li>
@@ -75,191 +60,245 @@ var youdao_conv_id = 271546;
     <div id="container">
         	<div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-     	        <dt><h3>用户中心</h3></dt>
-     	        <dd><a class="hover" href="__URL__/index">我的简历</a></dd>
-                <dd><a href="__URL__/invite">收到邀请</a></dd>
-        		<dd><a href="updatePwd.html">模拟面试记录</a></dd>
+     	        <dt><h4><font color='#999999'><a href="/text/index.php"><font color='#999999'>首页</font></a>>个人中心>修改密码</font></h4></dt>
+                <dd><a href="index">我的账号</a></dd>
+        <dd><a href="invite">已邀请人才</a></dd>
+        <dd><a href="update">修改密码</a></dd>
             </dl>
 </div>
-<input type="hidden" id="hasSidebar" value="1">	<div class="content user_modifyContent">
-    <dl class="c_section">
-        <dd>
-    		<form id="updatePswForm" action="__URL__/doadd" method="post" enctype="multipart/form-data" onsubmit="return check_all()" >
-    			<div id="tab">
-            	<table style="position:relative;">
-            		<input type="hidden" name="r_id" value="<?php echo $arr['r_id']; ?>">
-					<tr>
-						<td>姓名：</td>
-						<td><input type="text" id="r_names" name="r_name" onblur="check_names()" value="<?php echo $arr['r_name']; ?>" ><span id="r_name"></span></td>
-					</tr>
-					<tr>
-						<td>性别：</td>
-						<td>
-							<input type="radio" name="r_sex" <?php if ($arr['r_sex']=='0'){echo "checked";} ?> value="0">男
-							<input type="radio" checked="checked" name="r_sex" <?php if ($arr['r_sex']=='1') {echo "checked";} ?> name="r_sex" value="1">女
-						</td>
-					</tr>
-					<tr>
-						<td>年龄：</td>
-						<td>
-							<input id="age" onblur="check_age()" type="text" name="r_age" value="<?php echo $arr['r_age']; ?>"><span id="r_age"></span>
-						</td>
-					</tr>
-					<tr>
-						<td>出生年月：</td>
-						<td>
-							<input type="date" name="r_born" value="<?php echo $arr['r_born']; ?>">
-						</td>
-					</tr>
-					<tr>
-						<td>手机号：</td>
-						<td><input type="text" id="tel" onblur="check_tel()" name="r_tel" value="<?php echo $arr['r_tel']; ?>"><span id="r_tel"></span></td>
-					</tr>
-					<tr>
-						<td>邮箱：</td>
-						<td><input type="text" id="email" onblur="check_email()" name="r_email" value="<?php echo $arr['r_email']; ?>"><span id="r_email"></span></td>
-					</tr>
-					<tr>
-						<td>毕业学校：</td>
-						<td><input type="text" name="r_school" value="<?php echo $arr['r_school']; ?>"></td>
-					</tr>
-					<tr>
-						<td>学历：</td>
-						<td>
-							<select name="r_education" id="">
-								<option value="0">请选择</option>
-								<?php foreach ($edu as $key => $value): ?>
-									<option <?php if ($arr['r_education']==$value['ed_id']){echo 'selected';} ?> value="<?php echo $value['ed_id']; ?>"><?php echo $value['e_name']; ?></option>
-								<?php endforeach ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>家庭地址：</td>
-						<td>
-							<input type="text" name="r_address" value="<?php echo $arr['r_address']; ?>">
-						</td>
-					</tr>
-					<tr>
-						<td>期望薪资:</td>
-						<td>
-							<select name="m_id" id="">
-								<option value="0">请选择</option>
-								<?php foreach ($salary as $key => $value): ?>
-									<option <?php if ($arr['m_id']==$value['m_id']){echo 'selected';} ?> value="<?php echo $value['m_id']; ?>"><?php echo $value['m_money']; ?></option>
-								<?php endforeach ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>求职意向:</td>
-						<td>
-							<select name="p_id" id="">
-								<option value="0">请选择</option>
-								<?php foreach ($pos as $key => $value): ?>
-									<option <?php if ($arr['p_id']==$value['p_id']){echo 'selected';} ?> value="<?php echo $value['p_id']; ?>"><?php echo $value['p_name']; ?></option>
-								<?php endforeach ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>项目经验:</td>
-						<td>
-							<select name="eid" id="">
-								<option value="0">请选择</option>
-								<?php foreach ($exper as $key => $value): ?>
-									<option <?php if ($arr['eid']==$value['ex_id']){echo 'selected';} ?> value="<?php echo $value['ex_id']; ?>"><?php echo $value['e_year']; ?></option>
-								<?php endforeach ?>
-							</select>
-						</td>
-					</tr>
-					<tr>
-						<td>精通技能:</td>
-						<td><input type="text" name="r_skill" value="<?php echo $arr['r_skill']; ?>"></td>
-					</tr>
-					<tr>
-						<td>做过项目:</td>
-						<td><script id="editor" type="text/plain" style="width:600px;height:400px;"  ><?php echo $arr['r_project']; ?></script></td>
-					</tr>
-					<tr>
-						<td>自我评价:</td>
-						<td><textarea name="r_evaluate" id="" cols="15" rows="5" ><?php echo $arr['r_evaluate']; ?></textarea></td>
-					</tr>
-					<tr>
-						<td>&nbsp;</td>
-						<td><input class="btn_profile_save" type="submit" value="保 存"></td>
-					</tr>	<div id="img">
-					<img src="__PUBLIC__/uploads/<?php echo $arr['r_img']; ?>" alt="" onerror="javascript:this.src='__PUBLIC__/uploads/1.jpg';" width="100px" height="100px">
-					<input type="file" name="r_img" value="<?php echo $arr['r_img']; ?>" >
-            		</div>
-            			</table>
-            				</div>	
-							</form>
-				           </dd>
+<input type="hidden" id="hasSidebar" value="1">	
+<div class="content user_modifyContent">
+        <dl class="c_section">
+            
+            <dd>
+            	            	<form method='post' action="/text/index.php/Home/Company/update">
+                                <input type="hidden" name='e_id' value="<?php echo ($row["e_id"]); ?>">
+            		<table class="savePassword">
+            			<tbody>
+            			<tr>
+            				<td class="label">当前用户</td>
+            				
+                            <td class="c7"><?php echo ($row["e_phone"]); ?></td>
+            					           				
+            			</tr>
+                        <!-- <tr>
+                            <td><input type="hidden" id='phone' name='e_phone' value="<?php echo ($row["e_phone"]); ?>"></td>
+                            <td><input type="text" id='code' name="verify" style="width:120px" placeholder="请输入验证码">　　<input type="button" class="verify_num" value="获取验证码"  id="verity_num" style="height:50px"></td>
+                        </tr> -->
+                        <tr>
+                            <td class="label">原密码</td>
+                            <td><input type="password" maxlength="16" id="y_pwd" name="y_pwd" style="background-image: url(images/img/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><font color='red'><span id='s'></span></font></td>
+                        </tr>
+            			<tr>
+            				<td class="label">新密码</td>
+            				<td><input type="password" maxlength="16" id="e_pwd" name="e_pwd" style="background-image: url(images/img/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;"></td>
+            			</tr>
+                        <input type="hidden" id='password' value="<?php echo ($row["e_pwd"]); ?>">
+                        <tr>
+                            <td></td>
+                            <td><font color='red'><span id='s1'></span></font></td>
+                        </tr>
+            			<tr>
+            				<td class="label">确认密码</td>
+            				<td><input type="password" maxlength="16" id="re_pwd" name="re_pwd" style="background-image: url(images/img/a6y3y0Wx5kbFHvGuXzkgf0xhKnPzA4UTyaTB8Ph8AvcHi3fnsrZ7Wore02YViqVOrRXXPhfqP8j6MYlawoAAAAASUVORK5CYII=quot); background-repeat: no-repeat; background-attachment: scroll; background-position: right center;"></td>
+            			</tr>
+                        <tr>
+                            <td></td>
+                            <td><font color='red'><span id='s2'></span></font></td>
+                        </tr>
+            			<tr>
+            				<td>&nbsp;</td>
+            				<td><input type="submit" id='tijiao' value="保 存"></td>
+            			</tr>
+            		</tbody></table>
+				</form>
+				            </dd>
         </dl>
     </div>
-<script type="text/javascript">
-	//验证所有是否合法
-	function check_all(){
-		return check_names()&&check_age()&&check_tel()&&check_email(); 
-	}
-	//验证用户名
-	function check_names(){
-		var name=document.getElementById('r_names').value;
-		// alert(name);
-		var reg=/^[\u4e00-\u9fa5]{2,4}$/;
-		if (reg.test(name)) {
-			document.getElementById('r_name').innerHTML='';
-			return true;
-		}else{
-			document.getElementById('r_name').innerHTML='姓名不合法';
-			document.getElementById('r_name').style.color='red';
-			return false;
-		}
-	}
-	//验证年龄
-	function check_age(){
-		var name=document.getElementById('age').value;
-		// alert(name);
-		var reg=/^[0-9]{2}$/;
-		if (reg.test(name)) {
-			document.getElementById('r_age').innerHTML='';
-			return true;
-		}else{
-			document.getElementById('r_age').innerHTML='年龄不合法';
-			document.getElementById('r_age').style.color='red';
-			return false;
-		}
-	}
-	//验证手机号
-	function check_tel(){
-		var name=document.getElementById('tel').value;
-		// alert(name);
-		var reg=/^(13+\d{9})|(159+\d{8})|(153+\d{8})|(187)+\d{8}$/;
-		if (reg.test(name)) {
-			document.getElementById('r_tel').innerHTML='';
-			return true;
-		}else{
-			document.getElementById('r_tel').innerHTML='手机号不合法';
-			document.getElementById('r_tel').style.color='red';
-			return false;
-		}
-	}
-	//验证邮箱号
-	function check_email(){
-		var name=document.getElementById('email').value;
-		// alert(name);
-		var reg=/^\w+@\w+(\.\w+)+$/;
-		if (reg.test(name)) {
-			document.getElementById('r_email').innerHTML='';
-			return true;
-		}else{
-			document.getElementById('r_email').innerHTML='邮箱不合法';
-			document.getElementById('r_email').style.color='red';
-			return false;
-		}
-	}
-</script>
+
+<script type="text/javascript"  src="/text/Public/style/js/jquery.js"></script>
+    <script language="javascript">
+    //手机验证码
+  $(document).on('click','#stu',function(){
+        var $that = $(this);
+        $("#nostu").css("background",'none');
+        $that.css("background",'#dedede');
+        $('.admin_input').css('display','none');
+        $('.user_input').css('display','block');
+    });
+    $(document).on('click','#nostu',function(){
+        var $that = $(this);
+        $("#stu").css("background",'none');
+        $that.css("background",'#dedede');
+        $('.user_input').css('display','none');
+        $('.admin_input').css('display','block');
+    });
+    $(document).on('blur','#phone',function(){
+        var phone = $(this).val();
+        var tel = /^[1][3|5|8]\d{9}$/;
+        if(tel.test(phone)){
+            $.getJSON("/text/index.php/Home/Company/useronly",{phone:phone},function(obj){
+                if(obj == 1){
+                    flag = 'new';
+                    $('#ver').css('display','block');
+                    $('#verity_num').css('display','block');
+                }else{
+                    flag = 'old';
+                    $('#ver').css('display','none');
+                    $('#verity_num').css('display','none');
+                }
+            });
+        }else{
+            $('#ver').css('display','none');
+            $('#verity_num').css('display','none');
+        }
+    });
+    $(document).on('click','#verity_num',function(){
+        var phone = $('#e_phone').val();
+        $.getJSON("/text/index.php/Home/Company/verify",{phone:phone},function(obj){
+            if(obj == 100){
+                alert('验证码发送成功，请及时查收，1分钟后失效！');
+            }else if(obj == 108){
+                alert('手机号码发送太频繁，请换号或隔天再发');
+            }else{
+                alert('验证码发送失败，请及时联系客服！');
+            }
+        });
+    });
+    $(document).on('click','#sub',function(){
+        var phone = $('#phone').val();
+        var tel = /^[1][3|5|8]\d{9}$/;
+        var veri = /^\d{6}$/;
+        var verify = $('#verify').val();
+        if(tel.test(phone)){
+            if(flag == 'new'){
+                if(!veri.test(verify)){
+                    alert("请正确填写验证码");
+                    return false;
+                }
+            }
+        }
+    });
+    //验证码为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":text[id=code]").val();  
+            if(val==""){   
+                $('#s').html("<font color='red'>请输入有效验证码</font>");
+                $(":text[id=code]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    }); 
+    $('#code').blur(function(){
+        var code=$('#code').val();
+        if(code=='')
+        {
+          $('#s').html("<font color='red'>验证码不能为空</font>");  
+        }else{
+           $('#s').html(""); 
+        }
+     });
+    //原密码为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":password[id=y_pwd]").val();  
+            var password=$('#password').val();
+            if(val==""){   
+                $('#s').html("<font color='red'>原密码不能为空</font>");
+                $(":password[id=y_pwd]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }else if(val!=password){
+               $('#s').html("<font color='red'>原密码输入有误</font>");
+                $(":password[id=y_pwd]").focus();  
+                check.preventDefault();//此处阻止提交表单
+            }             
+        });  
+    }); 
+    $('#y_pwd').blur(function(){
+        var y_pwd=$('#y_pwd').val();
+        var password=$('#password').val();
+        if(y_pwd=='')
+        {
+          $('#s').html("<font color='red'>原密码不能为空</font>");  
+        }else{
+          if(y_pwd==password){
+            $('#s').html(""); 
+        }else{
+             $('#s').html("<font color='red'>原密码输入有误</font>");          
+        }
+        }
+           
+     });
+
+
+    //新密码为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":password[id=e_pwd]").val();  
+            if(val==""){   
+                $('#s1').html("<font color='red'>新密码不能为空</font>");
+                $(":password[id=e_pwd]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    }); 
+    $('#e_pwd').blur(function(){
+        var e_pwd=$('#e_pwd').val();
+        if(e_pwd=='')
+        {
+          $('#s1').html("<font color='red'>新密码不能为空</font>");  
+        }else{
+           $('#s1').html(""); 
+        }
+     });
+    //重复密码为空不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var re_pwd = $(":password[id=re_pwd]").val();  
+            var e_pwd = $(":password[id=e_pwd]").val();  
+            if(re_pwd!=e_pwd){   
+                $('#s2').html("<font color='red'>两次密码输入不一致</font>");
+                $(":password[id=re_pwd]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    }); 
+    //两次密码输入不一致不能提交
+    $(document).ready(function(){  
+        $(":submit[id=tijiao]").click(function(check){  
+            var val = $(":password[id=re_pwd]").val();  
+            if(val==""){   
+                $('#s2').html("<font color='red'>重复密码不能为空</font>");
+                $(":password[id=re_pwd]").focus();  
+                check.preventDefault();//此处阻止提交表单  
+            }             
+        });  
+    });
+    $('#re_pwd').blur(function(){
+        var re_pwd=$('#re_pwd').val();
+        var e_pwd=$('#e_pwd').val();
+        if(re_pwd=='')
+        {
+          $('#s2').html("<font color='red'>重复密码不能为空</font>");  
+        }else{
+           if(re_pwd==e_pwd)
+           {
+              $('#s2').html(""); 
+           }
+           else
+           {
+            $('#s2').html("<font color='red'>两次密码输入不一致</font>"); 
+           }
+           
+        }
+     });
+    </script>
+
 <!------------------------------------- 弹窗lightbox ----------------------------------------->
 <div style="display:none;">
 	<!-- 【情况1：第三方首次登录绑定自有帐号】 帐号绑定 : 帐号绑定成功后，未保留的帐号信息将不可恢复 -->	
@@ -423,29 +462,16 @@ var youdao_conv_id = 271546;
 	</div>
 	
 </div>
-<script type="text/javascript" charset="utf-8" src="__PUBLIC__/bianjiqi/ueditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="__PUBLIC__/bianjiqi/ueditor.all.min.js"> </script>
-<script type="text/javascript" charset="utf-8">
-    var ue = UE.getEditor('editor');
-</script>
-<!------------------------------------- end -----------------------------------------> <script src="__PUBLIC__/js/setting.js"></script>
+<!------------------------------------- end -----------------------------------------> <script src="js/setting.js"></script>
 			<div class="clear"></div>
 			<input type="hidden" value="" id="resubmitToken">
 	    	<a rel="nofollow" title="回到顶部" id="backtop"></a>
 	    </div><!-- end #container -->
 	</div><!-- end #body -->
-	<div id="footer">
-		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="h/about.html">联系我们</a>
-		    <a target="_blank" href="h/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">拉勾微博</a>
-		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
-		</div>
-	</div>
+	
 
-<script src="__PUBLIC__/js/core.min.js" type="text/javascript"></script>
-<script src="__PUBLIC__/js/popup.min.js" type="text/javascript"></script>
+<script src="js/core.min.js" type="text/javascript"></script>
+<script src="js/popup.min.js" type="text/javascript"></script>
 
 <!--  -->
 

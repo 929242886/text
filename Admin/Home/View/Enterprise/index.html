@@ -43,6 +43,25 @@
 </head>
 
 <body>
+<script type="text/javascript" src="__PUBLIC__/js/SysUtil.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+		<input type="hidden" value="<?php echo $_GET['success']?>" id = 'aa'/>
+		<input type="hidden" value="<?php echo $_GET['messign']?>" id = 'bb'/>
+<script>
+
+		$(function(){
+				var hh = document.getElementById('aa').value;
+				var bb = document.getElementById('bb').value;
+		//alert(hh);
+				if(hh == 'success')
+				{
+					//alert(1);
+					SysUtil.Tip.success(bb);
+				}else if(hh == 'error'){
+				SysUtil.Tip.error('这是失败消息');
+			}
+		});
+</script>
 <div class="navbar navbar-default" id="navbar">
 	<script type="text/javascript">
 		try{ace.settings.check('navbar' , 'fixed')}catch(e){}
@@ -121,7 +140,7 @@
 						企聘王控制台
 						<small>
 							<i class="icon-double-angle-right"></i>
-							 查看
+							 查看<?php echo $re['a'];?>
 						</small>
 					</h1>
 				</div><!-- /.page-header -->
@@ -129,7 +148,7 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<!-- PAGE CONTENT BEGINS -->
-	
+
 	<form class="form-inline definewidth m20" action="__CONTROLLER__/index" method="get">
     企业名称：
     <input type="text" name="keyword" id="keyword"class="abc input-default" placeholder="" value="{$keyword}">&nbsp;&nbsp;
@@ -314,8 +333,10 @@ window.jQuery || document.write("<script src='__PUBLIC__/js/jquery-1.10.2.min.js
 <script src="__PUBLIC__/js/ace.min.js"></script>
 
 <!-- inline scripts related to this page -->
-
+<script type="text/javascript" src="__PUBLIC__/js/SysUtil.js"></script>
+		<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
 <script type="text/javascript">
+
 	jQuery(function($) {
 		$('.easy-pie-chart.percentage').each(function(){
 			var $box = $(this).closest('.infobox');

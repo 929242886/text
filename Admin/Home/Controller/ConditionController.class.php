@@ -1,7 +1,7 @@
 <?php
   namespace Home\Controller;
   use Think\Controller;
-  class ConditionController extends Controller{
+  class ConditionController extends PublicController{
     /*
     *职位列表（分页、搜索、关键字标红、保留关键字）
     *作者：李亚博

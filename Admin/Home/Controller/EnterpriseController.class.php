@@ -1,7 +1,10 @@
 <?php
+     
+
   namespace Home\Controller;
   use Think\Controller;
-  class EnterpriseController extends Controller{
+  header("Content-type:text/html;charset=utf8");
+  class EnterpriseController extends PublicController{
 
     /**
      * 企业信息显示
@@ -9,7 +12,10 @@
      * @return array()
      * @author 李江坤
      */
+
   	public function index() {
+      
+     //print_r($_GET);die;
         $db = M('enterprise');
   			$where = 'e_id > 0';
   			$keyword = $_GET['keyword'];
@@ -48,9 +54,11 @@
   			$db = M('enterprise');
   		    $arr = $db->where(array('e_id'=>array('in',$e_id)))->delete();
 			if ($arr) {
-  				$this->success('删除成功',__CONTROLLER__.'/index');
+          
+          $this -> redirect('index',array('success'=>'success','messign'=>"删除成功"));
   			}else{
-  				$this->error('删除失败');
+  				$this->assign($success['a'],"error");
+          $this->assign($success['aa'],"删除失败");
   		}
     }
 
