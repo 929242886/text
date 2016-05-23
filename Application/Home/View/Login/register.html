@@ -45,7 +45,19 @@ var a=/^1[3|4|5|8]\d{9}$/;
 if(!a.test(username)){
     $('#s1').html('手机号格式不正确');
   }else{
-    $('#s1').html('');
+    $.ajax({
+    type:'get',
+    url:'__URL__/ajax',
+    data:{"phone":username},
+    dataType:'json',
+    success:function(msg){
+        if(msg==1){
+        $('#s1').html('手机号已注册');
+    }else{
+        $('#s1').html('');
+        }
+      }
+    });  
   }
 }
 
@@ -60,18 +72,25 @@ $('#s2').html('');
 });
 $(document).ready(function(){  
         $(":submit[id=commit]").click(function(check){  
-            var val = $(":text[id=e_phone]").val();  
+            //手机号码为空或格式不正确不能提交
+            var val = $(":text[id=e_phone]").val(); 
+            var a=/^1[3|4|5|8]\d{9}$/;  
             if(val==""){   
                 $('#s1').html("<font color='red'>手机号不能为空</font>");
                 $(":text[id=e_phone]").focus();  
                 check.preventDefault();//此处阻止提交表单  
-            } 
+            }else if(!a.test(val)) {
+                $('#s1').html('手机号格式不正确');
+                check.preventDefault();
+            }
+            //密码为空不能提交
             var vals = $(":password[id=e_pwd]").val();     
                if(vals==""){   
                 $('#s2').html("<font color='red'>密码不能为空</font>");
                 $(":text[id=e_pwd]").focus();  
                 check.preventDefault();//此处阻止提交表单  
-            }      
+            }
+                  
         });  
     });  
 });

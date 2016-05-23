@@ -72,6 +72,17 @@ class LoginController extends Controller{
         cookie($user_ip,$v_num,300);
         echo $return_str;
     }
+    public function ajax(){
+    	$phone=$_GET['phone'];
+    	$enterprise=D('enterprise');
+    	$where="e_phone='$phone'";
+		$data=$enterprise->where($where)->find();
+		if($data){
+			echo 1;
+		}else{
+			echo 2;
+		}
+    }
 }
 
 ?>
