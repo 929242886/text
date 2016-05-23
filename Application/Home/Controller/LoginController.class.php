@@ -18,7 +18,7 @@ class LoginController extends Controller{
 			if($data){
 				if($data['e_pwd']==$pwd){
 					$_SESSION['id']=$data['e_id'];
-					$this->redirect('登陆成功',U('Company/index'));
+					$this->redirect('Company/index');
 				}else{
 					$this->error('密码错误',U('index'));
 				}
