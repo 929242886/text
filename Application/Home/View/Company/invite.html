@@ -60,7 +60,7 @@ var youdao_conv_id = 271546;
     <div id="container">
         	<div class="user_bindSidebar">
     <dl id="user_sideBarmenu" class="user_sideBarmenu">
-     	        <dt><h4><font color='#6666ff'><a href="__APP__">首页</a>个人中心>邀请人才</font></h4></dt>
+     	        <dt><h4><font color='#999999'><a href="__APP__"><font color='#999999'>首页</font></a>>个人中心>邀请人才</font></h4></dt>
                 <dd><a href="index">我的账号</a></dd>
         <dd><a href="invite">已邀请人才</a></dd>
         <dd><a href="update">修改密码</a></dd>
@@ -74,7 +74,9 @@ var youdao_conv_id = 271546;
             	            
             		<table border='1'>
             			<tbody>
-            			<tr>
+            			
+                        
+                        <tr style="background-color: #c3dde1">
                         <th>姓名</th> 
                         <th>联系方式</th>
                         <th>邮箱</th>
@@ -83,22 +85,18 @@ var youdao_conv_id = 271546;
                         <th>面试时间</th>
                         <th>入职状态</th>      
                         </tr>
-            			
-                        <?php foreach($data as $v){ ?>
-                        <tr>
-                        
-                           
-                            <td><?php echo $v['s']['r_name'] ?></td>
-                            <td><?php echo $v['s']['r_tel'] ?></td>
-                            <td><?php echo $v['s']['r_email'] ?></td>
-                            <td><?php echo $v['l_job'] ?></td>
-                            <td><?php echo $v['l_salary'] ?>K</td>
-                            <td><?php echo $v['l_time'] ?></td>
-                            <td><?php if($v['is_accept']==0){echo '谢拒';}elseif($v['is_accept']==1){echo "<font color='red'>接受</font>";} ?></td>
-                        </tr><?php } ?>
-                        
-                        
-            			
+                         <?php foreach($data as $v){ ?>
+                                <tr style="background-color: rgb(212, 227, 229);" onmouseover="this.style.backgroundColor='#ffff66';" onmouseout="this.style.backgroundColor='#d4e3e5';">
+                    <td><?php echo $v['s']['r_name'] ?></td>
+                    <td><?php echo $v['s']['r_tel'] ?></td>
+                    <td><?php echo $v['s']['r_email'] ?></td>
+                    <td><?php echo $v['l_job'] ?></td>
+                    <td><?php echo $v['l_salary'] ?>K</td>
+                    <td><?php echo $v['l_time'] ?></td>
+                    <td><?php if($v['is_accept']==0){echo '谢拒';}elseif($v['is_accept']==1){echo "<font color='red'>接受</font>";} ?></td>
+                </tr>
+                <?php } ?>
+                                          			
             		</tbody></table>
 				
 				            </dd>
@@ -274,15 +272,7 @@ var youdao_conv_id = 271546;
 	    	<a rel="nofollow" title="回到顶部" id="backtop"></a>
 	    </div><!-- end #container -->
 	</div><!-- end #body -->
-	<div id="footer">
-		<div class="wrapper">
-			<a rel="nofollow" target="_blank" href="h/about.html">联系我们</a>
-		    <a target="_blank" href="h/af/zhaopin.html">互联网公司导航</a>
-		    <a rel="nofollow" target="_blank" href="http://e.weibo.com/lagou720">拉勾微博</a>
-		    <a rel="nofollow" href="javascript:void(0)" class="footer_qr">拉勾微信<i></i></a>
-			<div class="copyright">&copy;2013-2014 Lagou <a href="http://www.miitbeian.gov.cn/state/outPortal/loginPortal.action" target="_blank">京ICP备14023790号-2</a></div>
-		</div>
-	</div>
+	
 
 <script src="js/core.min.js" type="text/javascript"></script>
 <script src="js/popup.min.js" type="text/javascript"></script>
