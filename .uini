@@ -1,0 +1,1 @@
+open_basedir="E:\qipin\text\;E:\UPUPW_NP5.6\memcached\;E:\UPUPW_NP5.6\phpmyadmin\;E:\UPUPW_NP5.6\temp\;C:\Windows\Temp\"
